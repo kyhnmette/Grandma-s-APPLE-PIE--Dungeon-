@@ -1,0 +1,7 @@
+- WIP 3D models shall be in Dropbox! (>5 MB files can give some problems to sync it with Github)
+
+- When you are going to work with the game then copy the whole unity folder somewhere on your computer!
+
+- To avoid merge problems shall no one work on the same script at the same time!
+
+- The stage shall NEVER be changed! As it might give merge problems as well
