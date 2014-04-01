@@ -18,10 +18,6 @@ public class Life : MonoBehaviour {
 			Destroy(gameObject);
 	}
 	
-	public void Attack () {
-		
-	}
-	
 	public void GetHit (short DmgTaken) {
 		HP =- DmgTaken;
 	}
