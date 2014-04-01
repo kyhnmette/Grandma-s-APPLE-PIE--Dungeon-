@@ -3,7 +3,7 @@ using System.Collections;
 
 public class RotatObject : MonoBehaviour {
 	
-	public float rotSpeed = 150.0f;
+	float rotSpeed = 150.0f;
 	
 	// Use this for initialization
 	void Start () {
@@ -14,4 +14,4 @@ public class RotatObject : MonoBehaviour {
 	void Update () {
 		transform.Rotate(new Vector3(0, rotSpeed, 0) * Time.deltaTime);
 	}
-}
+} //keeps telling that compiler is not finished.
