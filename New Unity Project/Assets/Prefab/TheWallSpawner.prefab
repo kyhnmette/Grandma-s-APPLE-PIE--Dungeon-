@@ -38,7 +38,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fee0fa5c3f934db42a8584b891f901b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myCube: {fileID: 100000, guid: 809bf8a0143330a409eed67fd1e119e7, type: 2}
+  myCubeDOWN: {fileID: 100000, guid: 1e795f17e4d931342936836e52243dc9, type: 2}
+  myCubeUP: {fileID: 100000, guid: 5d2961b0ef1c88b4781d6aa1d833a1db, type: 2}
   TheFloar: {fileID: 100000, guid: 921a55f3ed98f2644bfd861fdfece082, type: 2}
 --- !u!1001 &100100000
 Prefab:
