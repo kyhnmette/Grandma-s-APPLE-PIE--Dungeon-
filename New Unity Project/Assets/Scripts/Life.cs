@@ -19,6 +19,6 @@ public class Life : MonoBehaviour {
 	}
 	
 	public void GetHit (short DmgTaken) {
-		HP =- DmgTaken;
+		//HP =- DmgTaken;
 	}
 }
