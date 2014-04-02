@@ -34,6 +34,7 @@ public class Lars : Life {
 		}
 		if (Input.GetKeyDown (KeyCode.Space) && BallIsReady == true){
 			Instantiate (Spawn, transform.position + transform.forward, Quaternion.identity);
+			BallIsReady = false;
 		}
 		
 		if (BallIsReady == false){
@@ -45,7 +46,5 @@ public class Lars : Life {
 			}
 				
 		}
-		
-		
 	}
 }

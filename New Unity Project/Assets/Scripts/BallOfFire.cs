@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BallOfFire : MonoBehaviour {
 	
-	private bool isHit {get; set;}
+	private float BallSpeed = 5.0f;
 	private short BallDmg {get; set;}
 	private int Frames = 0;
 		
@@ -15,21 +15,21 @@ public class BallOfFire : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		BallDmg = 40;
-		rigidbody.velocity = transform.forward * 10.0f;
+		BallDmg = 20;
+		rigidbody.velocity = transform.forward * BallSpeed;
 	}
 	
 	// Update is called once per frame
 	void Update () {	
 		Frames++;
-		if (Frames == 6){
+		if (Frames == 6 && BallDmg > 0){
 			Frames = 0;
 			BallDmg--;
 		}
 	}
 	
 	void OnCollisionEnter (Collision other) {
-		Instantiate (Sparkle, transform.position, Quaternion.identity);
+		//Instantiate (Sparkle, transform.position, Quaternion.identity);
 		Destroy (gameObject);
 	}
 }
