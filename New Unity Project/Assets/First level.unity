@@ -84,7 +84,7 @@ GameObject:
   - 4: {fileID: 650761235}
   - 114: {fileID: 650761234}
   m_Layer: 0
-  m_Name: TheWallSpawner
+  m_Name: TheSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
