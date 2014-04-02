@@ -131,6 +131,7 @@ GameObject:
   - 4: {fileID: 650761235}
   - 114: {fileID: 650761234}
   - 114: {fileID: 650761236}
+  - 114: {fileID: 650761237}
   m_Layer: 0
   m_Name: TheSpawner
   m_TagString: Untagged
@@ -182,6 +183,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IntroImage: {fileID: 1009831656}
   HowToImage: {fileID: 493745435}
+--- !u!114 &650761237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 650761233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89856e2e988a9384789d3dd359aef3b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DaBushDOWN: {fileID: 100000, guid: 6ede3d3bd501a96418f433ffc7a6988f, type: 2}
+  DaBushUP: {fileID: 100000, guid: a93a182770fc2484e966a10e5f889520, type: 2}
 --- !u!1001 &962793841
 Prefab:
   m_ObjectHideFlags: 0
@@ -225,6 +239,10 @@ Prefab:
       propertyPath: IntroImage
       value: 
       objectReference: {fileID: 1009831656}
+    - target: {fileID: 11400002, guid: f5cad009f2712454e877951c5f782c37, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f5cad009f2712454e877951c5f782c37, type: 2}
   m_RootGameObject: {fileID: 650761233}
@@ -465,6 +483,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d90e37dd6a1b2e244b76693f88c79be5, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d90e37dd6a1b2e244b76693f88c79be5, type: 2}
   m_RootGameObject: {fileID: 493745434}
@@ -503,6 +525,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3255ef03e673d224eb4457ce5da38aa4, type: 2}
       propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3255ef03e673d224eb4457ce5da38aa4, type: 2}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
