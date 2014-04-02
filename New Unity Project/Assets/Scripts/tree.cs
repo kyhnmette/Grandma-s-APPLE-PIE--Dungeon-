@@ -1,4 +1,4 @@
-﻿/*using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class tree : Life {
@@ -60,4 +60,4 @@ public class tree : Life {
 			}
 
 	}
-}*/
+}
