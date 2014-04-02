@@ -3,8 +3,7 @@ using System.Collections;
 
 public class Items : MonoBehaviour {
 	
-	// Shall the items even contain any atributes??
-	
+	private float rotSpeed = 150.0f;
 	public Transform pickUp;
 
 	// Use this for initialization
@@ -14,7 +13,7 @@ public class Items : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		transform.Rotate(new Vector3(0, rotSpeed, 0) * Time.deltaTime);
 	}
 	
 	void OnCollisionEnter(Collision other){
