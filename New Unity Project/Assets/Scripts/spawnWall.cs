@@ -8,6 +8,8 @@ public class spawnWall : MonoBehaviour {
 	public GameObject TheFloar;
 	public GameObject testCUBE;
 	public GameObject TheLarch;
+	public GameObject TestHEART;
+	public GameObject TestSEED;
  
     void Start() { //remember to change the vector coordinates according to the size of the object.
 		
@@ -36,6 +38,10 @@ public class spawnWall : MonoBehaviour {
 		for (float i = 1.5f; i<21; i++){ //test cube to tjek out sizes
        		GameObject cubeSpawn = (GameObject)Instantiate(testCUBE, new Vector3(i,1f,i), transform.rotation);
 		}
+		
+		GameObject heartspawn = (GameObject)Instantiate(TestHEART, new Vector3(7.5f,0f,4.5f), transform.rotation);
+		
+		GameObject seedSpawn = (GameObject)Instantiate(TestSEED, new Vector3(5.5f,0f,9.5f), transform.rotation);
 		
 		
     }
