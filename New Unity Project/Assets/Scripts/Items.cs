@@ -17,7 +17,7 @@ public class Items : MonoBehaviour {
 	}
 	
 	void OnCollisionEnter(Collision other){
-		if(other.gameObject.name == "Lars"){
+		if(other.gameObject.name == "Lars(Clone)"){
 			Instantiate(pickUp, transform.position, Quaternion.identity);
 			Destroy(gameObject);
 		}
