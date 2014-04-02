@@ -20,8 +20,8 @@ public class Apple : Life {
 		}
 	}
 	
-	void OnCollisionEnter (Collision other) {
+	/*void OnCollisionEnter (Collision other) {
 		if (other.gameObject.name == "BallOfFire")
 			GetHit(BallOfFire.GetBallDmg ());	// When the Ball of Fire hits an apple will it get hit with the ball's damage
-	}
+	}*/
 }

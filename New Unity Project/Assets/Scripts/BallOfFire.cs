@@ -9,9 +9,9 @@ public class BallOfFire : MonoBehaviour {
 		
 	public Transform Sparkle;
 	
-	public static short GetBallDmg () {
+	/*public static short GetBallDmg () {
 		return BallDmg;
-	}
+	}*/
 
 	// Use this for initialization
 	void Start () {
