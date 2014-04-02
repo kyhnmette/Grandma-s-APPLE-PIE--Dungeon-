@@ -7,7 +7,7 @@ public class BallOfFire : MonoBehaviour {
 	private short BallDmg = 40;
 	private int Frames = 0;
 		
-	public Transform TheBall;
+	//public Transform TheBall;
 
 	// Use this for initialization
 	void Start () {
@@ -24,7 +24,7 @@ public class BallOfFire : MonoBehaviour {
 	}
 	
 	void OnCollisionEnter (Collision other) {
-		Instantiate (TheBall, transform.position, Quaternion.identity);
+		//Instantiate (TheBall, transform.position, Quaternion.identity);
 		Destroy (gameObject);
 	}
 }

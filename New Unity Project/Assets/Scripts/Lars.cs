@@ -2,6 +2,11 @@
 using System.Collections;
 
 public class Lars : Life {
+	
+	private short BallCoolDown = 48;
+	private bool BallIsReady = true;
+	
+	public GameObject Spawn;
 
 	// Use this for initialization
 	void Start () {
@@ -26,6 +31,19 @@ public class Lars : Life {
 		if (Input.GetKeyDown (KeyCode.S)){
 			transform.position += new Vector3(0, 0, -1f); //z position movin back
 			transform.eulerAngles = new Vector3(0, 270, 0);
+		}
+		if (Input.GetKeyDown (KeyCode.Space) && BallIsReady == true){
+			Instantiate (Spawn, transform.position + transform.forward, Quaternion.identity);
+		}
+		
+		if (BallIsReady == false){
+			BallCoolDown--;
+			
+			if (BallCoolDown == 0){
+				BallIsReady = true;
+				BallCoolDown = 48;
+			}
+				
 		}
 		
 		
