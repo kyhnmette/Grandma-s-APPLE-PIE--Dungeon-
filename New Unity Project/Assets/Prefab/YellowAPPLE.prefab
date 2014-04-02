@@ -3056,6 +3056,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 400404}
+  - 65: {fileID: 6500000}
+  - 54: {fileID: 5400000}
   m_Layer: 0
   m_Name: YellowAPPLE
   m_TagString: Untagged
@@ -5354,8 +5356,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100396}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: 1.33956289, y: -5.6599865, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: .304251373, y: -.502485037, z: 2.73888617e-07}
+  m_LocalScale: {x: .295714498, y: .295714498, z: .295714498}
   m_Children: []
   m_Father: {fileID: 400404}
 --- !u!4 &400394
@@ -5365,8 +5367,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100398}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: -1.42996812, y: -5.6599865, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -.39555499, y: -.502485037, z: 2.73888617e-07}
+  m_LocalScale: {x: .295714498, y: .295714498, z: .295714498}
   m_Children: []
   m_Father: {fileID: 400404}
 --- !u!4 &400396
@@ -5376,8 +5378,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100394}
   m_LocalRotation: {x: 0, y: -.087155737, z: 0, w: .99619472}
-  m_LocalPosition: {x: .0380443335, y: -2.60146356, z: -.192551613}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: .0293148421, y: .367149174, z: -.105104558}
+  m_LocalScale: {x: .295714498, y: .295714498, z: .295714498}
   m_Children:
   - {fileID: 400096}
   - {fileID: 400094}
@@ -5404,8 +5406,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100400}
   m_LocalRotation: {x: 0, y: -.087155737, z: 0, w: .99619472}
-  m_LocalPosition: {x: .129190207, y: -2.27124, z: -.101344943}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: .0285240971, y: .492926687, z: -.0757426918}
+  m_LocalScale: {x: .295714498, y: .295714498, z: .295714498}
   m_Children:
   - {fileID: 400194}
   - {fileID: 400192}
@@ -5432,8 +5434,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100392}
   m_LocalRotation: {x: 0, y: -.087155737, z: 0, w: .99619472}
-  m_LocalPosition: {x: -.0481474996, y: -2.73681808, z: -.0594916344}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -.0169061162, y: .309377879, z: -.0539829284}
+  m_LocalScale: {x: .295714498, y: .295714498, z: .295714498}
   m_Children:
   - {fileID: 400292}
   - {fileID: 400290}
@@ -5460,8 +5462,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100402}
   m_LocalRotation: {x: 0, y: -.087155737, z: 0, w: .99619472}
-  m_LocalPosition: {x: .00621747971, y: -2.40282607, z: -.0609579086}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: .00621771114, y: .431869507, z: -.0609579086}
+  m_LocalScale: {x: .295714498, y: .295714498, z: .295714498}
   m_Children:
   - {fileID: 400390}
   - {fileID: 400388}
@@ -5488,7 +5490,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100404}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.64275885, y: 1.61219597, z: 0}
+  m_LocalPosition: {x: -3, y: 0, z: 0}
   m_LocalScale: {x: .491162002, y: .491162002, z: .491162002}
   m_Children:
   - {fileID: 400402}
@@ -5648,6 +5650,33 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100304}
   m_Mesh: {fileID: 4300000, guid: 393a4a511bbf4fb4e8be73f0105bc9de, type: 3}
+--- !u!54 &5400000
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100404}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 122
+  m_CollisionDetection: 0
+--- !u!65 &6500000
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100404}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &9500000
 Animator:
   m_ObjectHideFlags: 1

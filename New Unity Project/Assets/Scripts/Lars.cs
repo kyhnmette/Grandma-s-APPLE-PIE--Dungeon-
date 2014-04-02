@@ -7,10 +7,14 @@ public class Lars : Life {
 	private bool BallIsReady = true;
 	
 	public GameObject Spawn;
+	
+	short Points;
 
 	// Use this for initialization
 	void Start () {
 	
+		HP = 5;
+		
 	}
 	
 	// Update is called once per frame
@@ -45,6 +49,29 @@ public class Lars : Life {
 				BallCoolDown = 48;
 			}
 				
+		}
+	}
+		void OnCollisionEnter(Collision other){
+		if(other.gameObject.name == "HeartHP(Clone)"){
+			HP += 5;
+		}
+		if(other.gameObject.name == "appleseed(Clone)"){
+			Points += 1;
+		}
+		if(other.gameObject.name == "GreenAPPLE(Clone)"){
+			//HP -
+		}
+		if(other.gameObject.name == "YellowAPPLE(Clone)"){
+			//HP -
+		}
+		if(other.gameObject.name == "RedAPPLE(Clone)"){
+			//HP -
+		}
+		if(other.gameObject.name == "Branch(Clone)"){
+			//HP -
+		}
+		if(other.gameObject.name == "Tree(Clone)"){
+			//HP -
 		}
 	}
 }
