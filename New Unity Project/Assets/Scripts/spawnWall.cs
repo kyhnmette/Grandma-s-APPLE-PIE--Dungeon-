@@ -18,13 +18,13 @@ public class spawnWall : MonoBehaviour {
 		//new vector3 telling it where to put it (z,y,x) (left/right, up/down, forth/back)
 		// transform.rotation, the instantiate needs to know where the object faces towards, even if we do not change the original rotation.
 		
-		for (float i = 1; i<20; i+=2){
+		for (float i = 1f; i<20; i+=2){
        		GameObject cubeSpawn = (GameObject)Instantiate(myCubeDOWN, new Vector3(0.5f,1f,i), transform.rotation);
 		}
 		for (float i = 1f; i<21; i+=2){
        		GameObject cubeSpawn = (GameObject)Instantiate(myCubeDOWN, new Vector3(20.5f,1f,i), transform.rotation);
 		}
-		for (float i = 1f; i<21; i+=2){
+		for (float i = 2f; i<21; i+=2){
        		GameObject cubeSpawn = (GameObject)Instantiate(myCubeUP, new Vector3(i,1f,20.5f), transform.rotation);
 		}
 		
