@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿/*using UnityEngine;
 using System.Collections;
 
 public class tree : Life {
@@ -7,45 +7,42 @@ public class tree : Life {
 	void Start () {
 
 		// code to put the tree object into the scene needs to be done
+		public float valueX;
+		public float valueY;
 
 		HP = 200; // (temp number) need to set the different numbers
 		ATK = 40; //
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		int tree.transform.position.x = ?; // this position stays the same, the tree does not move
-		int tree.transform.position.y = ?;
-		int tree.transform.position.z = ?;
-		int lars.transform.postition.x = ?; //should be Larses current position
-		int lars.transform.postition.y = ?;
-		int lars.transform.postition.z = ?;
+	 void Update () {
+		valueX = lars.position.x -= tree.position.x;
+		valueY = lars.position.y -= tree.position.y;
 
-		int distance = tree.transform.position - lars.transform.position; // better methods should be found
+		if (valueX < 0 && valueX > 1 && valueY < 0 && valueY > 1) {
+			// attack 
+			// damadge 100%
+		} 
 
-		if (distance >= 6){
-			// tree animation play;
-		switch (distance) {
-		case 1:
+		if (valueX < 1 && valueX > 2 && valueY < 1 && valueY > 2) {
+			// attack 
+			// damadge 80%
+		} 
+		if (valueX < 2 && valueX > 3 && valueY < 2 && valueY > 3) {
+			// attack 
+			// damadge 60%
+		} 
 
-			break;
-		case 2:
+		if (valueX < 5 && valueX > 3 && valueY < 5 && valueY > 3) {
+			// attack 
+			// damadge 40%
+		} 
+		if (valueX < 5 && valueX > 6 && valueY < 5 && valueY > 6) {
+			// attack 
+			// damadge 20%
+		} 
 
-			break;
-		case 3:
 
-			break;
-		case 4:
-
-			break;
-		case 5:
-
-			break;
-
-		default:
-			break;
-		}
-		}
 
 
 		// timer script 
@@ -61,3 +58,4 @@ public class tree : Life {
 
 	}
 }
+*/
