@@ -4,19 +4,22 @@ using System.Collections;
 public class BallOfFire : MonoBehaviour {
 	
 	private float BallSpeed = 100.0f;
-	private short BallDmg {get; set;}
+	private static short BallDmg;
 	private int Frames = 0;
+
+	private GameObject lars;
 		
 	public Transform Sparkle;
 	
-	/*public static short GetBallDmg () {
+	public static short GetBallDmg () {
 		return BallDmg;
-	}*/
+	}
 
 	// Use this for initialization
 	void Start () {
+		lars = GameObject.Find ("Lars");
 		BallDmg = 20;
-		rigidbody.velocity = transform.forward * BallSpeed * Time.deltaTime;
+		rigidbody.velocity = lars.transform.forward * BallSpeed * Time.deltaTime;
 	}
 	
 	// Update is called once per frame
