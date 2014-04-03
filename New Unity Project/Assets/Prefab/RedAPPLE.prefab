@@ -3058,6 +3058,7 @@ GameObject:
   - 4: {fileID: 400404}
   - 65: {fileID: 6500000}
   - 54: {fileID: 5400000}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: RedAPPLE
   m_TagString: Untagged
@@ -5725,6 +5726,19 @@ Animator:
   m_CullingMode: 1
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfa05a9e480ad1845b18a6d372145042, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Larch: {fileID: 100000, guid: c78c04e7d7e05d34b81305a8eb8044c2, type: 2}
+  EvilApple: {fileID: 100404}
 --- !u!136 &13600000
 CapsuleCollider:
   m_ObjectHideFlags: 1

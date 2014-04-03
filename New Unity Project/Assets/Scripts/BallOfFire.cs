@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BallOfFire : MonoBehaviour {
 	
-	private float BallSpeed = 5.0f;
+	private float BallSpeed = 100.0f;
 	private short BallDmg {get; set;}
 	private int Frames = 0;
 		
@@ -16,7 +16,7 @@ public class BallOfFire : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		BallDmg = 20;
-		rigidbody.velocity = transform.forward * BallSpeed;
+		rigidbody.velocity = transform.forward * BallSpeed * Time.deltaTime;
 	}
 	
 	// Update is called once per frame
