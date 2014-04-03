@@ -9,6 +9,10 @@ public class Lars : Life {
 	private short MaxHP;
 	
 	public GameObject Spawn;
+	
+	public static short GetHP () {
+		return HP;
+	}
 
 	// Use this for initialization
 	void Start () {
@@ -21,40 +25,41 @@ public class Lars : Life {
 	
 	// Update is called once per frame
 	void Update () {
-	
-		if (Input.GetKey(KeyCode.A)){
-			transform.position += new Vector3(-3.0f, 0, 0)* Time.deltaTime;	//x position, movin left
-			transform.eulerAngles = new Vector3(0, 270, 0);
-		}
-		if (Input.GetKey(KeyCode.D)){
-			transform.position += new Vector3(3.0f, 0, 0)* Time.deltaTime; //x position moving right
-			transform.eulerAngles = new Vector3(0, 90, 0);
-		}
-		if (Input.GetKey(KeyCode.W)){
-			transform.position += new Vector3(0, 0, 3f)* Time.deltaTime; //z position moving forwards
-			transform.eulerAngles = new Vector3(0, 0, 0);
-		}
-		if (Input.GetKey(KeyCode.S)){
-			transform.position += new Vector3(0, 0, -3f)* Time.deltaTime; //z position movin back
-			transform.eulerAngles = new Vector3(0, 180, 0);
-		}
-		if (Input.GetKeyDown (KeyCode.Space) && BallIsReady == true){
-			Instantiate (Spawn, transform.position + transform.forward, Quaternion.identity);
-			BallIsReady = false;
-		}
-		
-		if (BallIsReady == false){
-			BallCoolDown--; //* Time.deltatime???
-			
-			if (BallCoolDown == 0){
-				BallIsReady = true;
-				BallCoolDown = 48;
+		if (GUI.GetGameOn() == true){
+			if (Input.GetKey(KeyCode.A)){
+				transform.position += new Vector3(-3.0f, 0, 0)* Time.deltaTime;	//x position, movin left
+				transform.eulerAngles = new Vector3(0, 270, 0);
 			}
-				
-		}
+			if (Input.GetKey(KeyCode.D)){
+				transform.position += new Vector3(3.0f, 0, 0)* Time.deltaTime; //x position moving right
+				transform.eulerAngles = new Vector3(0, 90, 0);
+			}
+			if (Input.GetKey(KeyCode.W)){
+				transform.position += new Vector3(0, 0, 3f)* Time.deltaTime; //z position moving forwards
+				transform.eulerAngles = new Vector3(0, 0, 0);
+			}
+			if (Input.GetKey(KeyCode.S)){
+				transform.position += new Vector3(0, 0, -3f)* Time.deltaTime; //z position movin back
+				transform.eulerAngles = new Vector3(0, 180, 0);
+			}
+			if (Input.GetKeyDown (KeyCode.Space) && BallIsReady == true){
+				Instantiate (Spawn, transform.position + transform.forward, Quaternion.identity);
+				BallIsReady = false;
+			}
 		
-		if (HP > MaxHP)
-			HP = MaxHP;
+			if (BallIsReady == false){
+				BallCoolDown--; //* Time.deltatime???
+			
+				if (BallCoolDown == 0){
+					BallIsReady = true;
+					BallCoolDown = 48;
+				}
+				
+			}
+		
+			if (HP > MaxHP)
+				HP = MaxHP;
+		}
 	}
 	
 		void OnCollisionEnter(Collision other){

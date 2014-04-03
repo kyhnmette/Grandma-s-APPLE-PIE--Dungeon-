@@ -1,5 +1,0 @@
-Health Points	HP
-Attack		ATK
-Speed		Speed
-GetHit		on-collision function
-Damage Taken	DmgTaken

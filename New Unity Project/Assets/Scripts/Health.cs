@@ -22,9 +22,15 @@ public class Health : MonoBehaviour {
 		transform.localScale = new Vector3(transform.localScale.y, lars.HP());
 
 <<<<<<< HEAD
-	}*/
+<<<<<<< HEAD
+	}
 }
 =======
 	}
 }*/
->>>>>>> FETCH_HEAD
+//>>>>>>> FETCH_HEAD
+//======= 
+	//} 
+//}
+//>>>>>>> FETCH_HEAD
+		
