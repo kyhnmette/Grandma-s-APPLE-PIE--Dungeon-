@@ -5,15 +5,16 @@ public class Lars : Life {
 	
 	private short BallCoolDown = 48;
 	private bool BallIsReady = true;
+	private short Points;
+	private short MaxHP;
 	
 	public GameObject Spawn;
-	
-	short Points;
 
 	// Use this for initialization
 	void Start () {
 	
 		HP = 5;
+		MaxHP = 5;
 		
 	}
 	
@@ -50,7 +51,11 @@ public class Lars : Life {
 			}
 				
 		}
+		
+		if (HP > MaxHP)
+			HP = MaxHP;
 	}
+	
 		void OnCollisionEnter(Collision other){
 		if(other.gameObject.name == "HeartHP(Clone)"){
 			HP += 5;
