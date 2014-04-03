@@ -167,6 +167,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 650761235}
   - 114: {fileID: 650761234}
+  - 114: {fileID: 650761237}
   - 114: {fileID: 650761236}
   m_Layer: 0
   m_Name: TheSpawner
@@ -190,13 +191,13 @@ MonoBehaviour:
   myCubeDOWN: {fileID: 100000, guid: 1e795f17e4d931342936836e52243dc9, type: 2}
   myCubeUP: {fileID: 100000, guid: 5d2961b0ef1c88b4781d6aa1d833a1db, type: 2}
   TheFloar: {fileID: 100000, guid: 921a55f3ed98f2644bfd861fdfece082, type: 2}
-  testCUBE: {fileID: 100000, guid: 809bf8a0143330a409eed67fd1e119e7, type: 2}
   TheLarch: {fileID: 100000, guid: c78c04e7d7e05d34b81305a8eb8044c2, type: 2}
   TestHEART: {fileID: 100028, guid: c8dc47716b3188a4a8d98cadd7467c2e, type: 2}
   TestSEED: {fileID: 100020, guid: 0270e99bad32b8c4697a3aceb797f3e7, type: 2}
   TestAPPLEG: {fileID: 100404, guid: 3fd63057f27f3384a8f5a78d11265433, type: 2}
   TestAPPLEY: {fileID: 100404, guid: bfe7ace0fe57d914bb6e43e93d7e69aa, type: 2}
   TestAPPLER: {fileID: 100404, guid: 5afd744197128164897da2966d1d507c, type: 2}
+  BACKGROUND: {fileID: 100000, guid: 1457d2659d52abd449794149ed0b3d54, type: 2}
 --- !u!4 &650761235
 Transform:
   m_ObjectHideFlags: 0
@@ -223,6 +224,20 @@ MonoBehaviour:
   HowToImage: {fileID: 749935059}
   Win: {fileID: 0}
   Lose: {fileID: 0}
+--- !u!114 &650761237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: f5cad009f2712454e877951c5f782c37,
+    type: 2}
+  m_PrefabInternal: {fileID: 962793841}
+  m_GameObject: {fileID: 650761233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89856e2e988a9384789d3dd359aef3b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DaBushDOWN: {fileID: 100002, guid: 32bb854c8702cbb4a93b6b9b92c1c919, type: 2}
+  DaBushUP: {fileID: 100000, guid: 8d3b730a919545043bf0dd1eb938ab25, type: 2}
 --- !u!1 &749935058
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,6 +454,14 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e691a596626bb84babeec6906fab8df, type: 3}
   m_Name: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
   m_EditorClassIdentifier: 
   m_EditorClassIdentifier: 
   m_EditorClassIdentifier: 
