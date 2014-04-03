@@ -3,9 +3,9 @@ using System.Collections;
 
 public class Life : MonoBehaviour {
 	
-	protected short HP {get; set;}
-	protected short ATK {get; set;}
-	protected short Speed {get; set;}
+	protected static short HP;
+	protected short ATK;
+	protected short Speed;
 
 	// Use this for initialization
 	void Start () {
