@@ -1,8 +1,8 @@
-﻿/*using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class Health : MonoBehaviour {
-	/*
+
 	public GameObject healthBar;
 	public GameObject larsObject;
 	Lars lars;
@@ -21,16 +21,6 @@ public class Health : MonoBehaviour {
 		}
 		transform.localScale = new Vector3(transform.localScale.y, lars.HP());
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 	}
 }
-=======
-	}
-}*/
-//>>>>>>> FETCH_HEAD
-//======= 
-	//} 
-//}
-//>>>>>>> FETCH_HEAD
-		
