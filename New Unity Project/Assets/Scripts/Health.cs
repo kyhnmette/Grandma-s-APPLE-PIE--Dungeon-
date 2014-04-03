@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿/*using UnityEngine;
 using System.Collections;
 
 public class Health : MonoBehaviour {
@@ -22,4 +22,4 @@ public class Health : MonoBehaviour {
 		transform.localScale = new Vector3(transform.localScale.y, lars.HP);
 
 	}
-}
+}*/
