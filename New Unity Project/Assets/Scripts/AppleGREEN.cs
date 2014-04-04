@@ -15,12 +15,16 @@ public class AppleGREEN : Apple {
 	
 	// Update is called once per frame
 	void Update () {
-
-	}
-
-	void OnCollisionEnter(Collision other){
-		if(other.gameObject.name == "BallOfFire(Clone)"){
-			HP -= BallOfFire.GetBallDmg();
+		if (HP <= 0){
+			Destroy (gameObject);
 		}
+
+
+
 	}
+
+
+			
+
+
 }
