@@ -6,6 +6,7 @@ public class Health : MonoBehaviour {
 	public GameObject healthBar;
 	public GameObject larsObject;
 	Lars lars;
+	short hp;
 
 	// Use this for initialization
 	void Start () {
@@ -16,10 +17,11 @@ public class Health : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (lars.HP() <= 0) {
-			destroy (gameObject);
+
+		if (hp <= 0) {
+			Destroy (gameObject);
 		}
-		transform.localScale = new Vector3(transform.localScale.y, lars.HP());
+		transform.localScale = new Vector3(transform.localScale.y, hp);
 
 
 	}
