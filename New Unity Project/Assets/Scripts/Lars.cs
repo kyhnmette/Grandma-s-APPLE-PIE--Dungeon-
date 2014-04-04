@@ -8,12 +8,28 @@ public class Lars : Life {
 	private short Points;
 	private int MaxHP;
 	
+	private static float LarsX;
+	private static float LarsY;
+	private static float LarsZ;
+	
 	public GameObject Spawn;
 	
 	public static int GetHP () {
 		return HP;
 	}
-
+	
+	public static float GetLarsX () {
+		return LarsX;
+	}
+	
+	public static float GetLarsY () {
+		return LarsY;
+	}
+	
+	public static float GetLarsZ () {
+		return LarsZ;
+	}
+	
 	// Use this for initialization
 	void Start () {
 	
@@ -25,6 +41,10 @@ public class Lars : Life {
 	
 	// Update is called once per frame
 	void Update () {
+		LarsX = transform.position.x;	// Gets Larses current X coordinates
+		LarsY = transform.position.y;	// Gets Larses current Y coordinates
+		LarsZ = transform.position.z;	// Gets Larses current Z coordinate 
+		
 		if (GUI.GetGameOn() == true){
 			if (Input.GetKey(KeyCode.A)){
 				transform.position += new Vector3(-3.0f, 0, 0)* Time.deltaTime;	//x position, movin left
