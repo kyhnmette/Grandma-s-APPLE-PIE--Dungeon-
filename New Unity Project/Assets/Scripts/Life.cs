@@ -2,9 +2,9 @@ using UnityEngine;
 using System.Collections;
 
 public class Life : MonoBehaviour {
-	
+
 	protected static short HP;
-	protected short ATK;
+	protected static short ATK;
 	protected float Speed;
 
 	// Use this for initialization

@@ -1,13 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TreeRoot : MonoBehaviour {
+public class TreeRoot : Life {
 
 	//public gameObject treeObject;
 	//tree treeScript;
 
+	public static short GetATK(){
+		return ATK; 
+	}
+
 	// Use this for initialization
 	void Start () {
+		ATK = 20;
+
 		//treeScript = gameObject.Find("tree").GetComponent<tree>();
 	}
 	

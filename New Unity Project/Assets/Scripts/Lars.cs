@@ -70,19 +70,19 @@ public class Lars : Life {
 			Points += 1;
 		}
 		if(other.gameObject.name == "GreenAPPLE(Clone)"){
-			//HP -
+			HP -= AppleGREEN.GetATK ();
 		}
 		if(other.gameObject.name == "YellowAPPLE(Clone)"){
-			//HP -
+			HP -= AppleYELLOW.GetATK ();
 		}
 		if(other.gameObject.name == "RedAPPLE(Clone)"){
-			//HP -
+			HP -= AppleRed.GetATK ();
 		}
 		if(other.gameObject.name == "Branch(Clone)"){
-			//HP -
+			HP -= TreeRoot.GetATK ();
 		}
 		if(other.gameObject.name == "Tree(Clone)"){
-			//HP -
+			HP = 0;
 		}
 	}
 }

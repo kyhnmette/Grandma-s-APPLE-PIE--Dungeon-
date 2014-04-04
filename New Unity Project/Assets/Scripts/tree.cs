@@ -32,8 +32,7 @@ public class tree : Life {
 			// attack 
 			larsOldPos = lars.transform.position;
 			Invoke ("damageFunction", 2);				
-			//if (coHappen = true) {
-				lars.life.HP - 50; // kind of bool missing, need to check if the collission is happening 
+
 			//}
 		} 
 
@@ -42,13 +41,13 @@ public class tree : Life {
 			larsOldPos = lars.transform.position;
 			Invoke ("damageFunction", 3);				
 
-			lars.life.HP - 40;
+
 		} 
 		{	if (valueX < 2 && valueX > 3 && valueY < 2 && valueY > 3) {
 			// attack 
 			larsOldPos = lars.transform.position;
 			Invoke ("damageFunction", 4);				
-			lars.life.HP - 30;
+
 
 		} 
 
@@ -56,7 +55,7 @@ public class tree : Life {
 			// attack 
 			larsOldPos = lars.transform.position;
 			Invoke ("damageFunction", 5);
-				lars.life.HP - 20;
+
 
 		} 
 		if (valueX < 5 && valueX > 6 && valueY < 5 && valueY > 6) {
