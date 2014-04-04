@@ -79,7 +79,7 @@ public class Lars : Life {
 			//HP -
 		}
 		if(other.gameObject.name == "Branch(Clone)"){
-			TreeRoot.GetATK ();
+			HP -= TreeRoot.GetATK ();
 		}
 		if(other.gameObject.name == "Tree(Clone)"){
 			HP = 0;
