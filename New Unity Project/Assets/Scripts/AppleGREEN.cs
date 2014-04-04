@@ -3,7 +3,7 @@ using System.Collections;
 
 public class AppleGREEN : Apple {
 
-	public static short GetATK() {
+	public static int GetATK() {
 		return ATK;
 	}
 
@@ -14,6 +14,6 @@ public class AppleGREEN : Apple {
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 }

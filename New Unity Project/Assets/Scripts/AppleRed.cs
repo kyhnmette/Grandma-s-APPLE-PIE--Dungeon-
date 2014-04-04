@@ -3,7 +3,7 @@ using System.Collections;
 
 public class AppleRed : Apple {
 
-	public static short GetATK() {
+	public static int GetATK() {
 		return ATK;
 	}
 

@@ -3,8 +3,8 @@ using System.Collections;
 
 public class Life : MonoBehaviour {
 
-	protected static short HP;
-	protected static short ATK;
+	protected static int HP;
+	protected static int ATK;
 	protected float Speed;
 
 	// Use this for initialization
@@ -18,7 +18,7 @@ public class Life : MonoBehaviour {
 			Destroy(gameObject);
 	}
 	
-	public void GetHit (short DmgTaken) {
+	public void GetHit (int DmgTaken) {
 		HP -= DmgTaken;
 	}
 }

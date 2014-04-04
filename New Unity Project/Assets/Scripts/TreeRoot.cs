@@ -6,7 +6,7 @@ public class TreeRoot : Life {
 	//public gameObject treeObject;
 	//tree treeScript;
 
-	public static short GetATK(){
+	public static int GetATK(){
 		return ATK; 
 	}
 

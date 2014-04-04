@@ -6,19 +6,19 @@ public class Lars : Life {
 	private short BallCoolDown = 48;
 	private bool BallIsReady = true;
 	private short Points;
-	private short MaxHP;
+	private int MaxHP;
 	
 	public GameObject Spawn;
 	
-	public static short GetHP () {
+	public static int GetHP () {
 		return HP;
 	}
 
 	// Use this for initialization
 	void Start () {
 	
-		HP = 5;
-		MaxHP = 20;
+		HP = 100;
+		MaxHP = 150;
 		Points = 0;
 		
 	}
@@ -62,7 +62,7 @@ public class Lars : Life {
 		}
 	}
 	
-		void OnCollisionEnter(Collision other){
+	void OnCollisionEnter(Collision other){
 		if(other.gameObject.name == "HeartHP(Clone)"){
 			HP += 5;
 		}
@@ -70,16 +70,20 @@ public class Lars : Life {
 			Points += 1;
 		}
 		if(other.gameObject.name == "GreenAPPLE(Clone)"){
-			HP -= AppleGREEN.GetATK ();
+			HP = HP - AppleGREEN.GetATK ();
+			print (HP);
 		}
 		if(other.gameObject.name == "YellowAPPLE(Clone)"){
 			HP -= AppleYELLOW.GetATK ();
+			print (HP);
 		}
 		if(other.gameObject.name == "RedAPPLE(Clone)"){
 			HP -= AppleRed.GetATK ();
+			print (HP);
 		}
 		if(other.gameObject.name == "Branch(Clone)"){
 			HP -= TreeRoot.GetATK ();
+			print (HP);
 		}
 		if(other.gameObject.name == "Tree(Clone)"){
 			HP = 0;

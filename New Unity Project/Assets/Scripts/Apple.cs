@@ -17,6 +17,11 @@ public class Apple : Life {
 	
 	// Update is called once per frame
 	void Update () {
+		
+	}
+	
+	protected void ParentUpdate()
+	{
 		if (GUI.GetGameOn() == true){
 			Frames++;			// Counts the timer up
 			if (Frames == 24){	// the timer there runs each secound
@@ -24,14 +29,15 @@ public class Apple : Life {
 			}
 		}
 		
-		float distance = Vector3.Distance(EvilApple.position, Larch.position);
+		float distance = Vector3.Distance( Larch.position,EvilApple.position);
 		
-		if ( distance < 10f)
+		if ( distance < 30f)
 		{
 			print ("hullabulla" + distance);
 			EvilApple.position += EvilApple.forward * Speed * Time.deltaTime;
 		}
 	}
+	
 	void OnCollisionEnter (Collision other) {
 		if (other.gameObject.name == "BallOfFire(Clone)")
 		{
