@@ -3,14 +3,16 @@ using System.Collections;
 
 public class tree : Life {
 
+	private float valueX;
+	private float valueZ;
+	private float LarsOldX;
+	private float LarsOldY;
+	private float LarsOldZ;
+	
+	//private bool larsCol = false;
+	//private bool coHappen = false;
+	
 	public GameObject treeRoot;
-	public GameObject lars;
-	public float valueX;
-	public float valueZ;
-	public Vector3 larsOldPos;
-	public bool larsCol = false;
-	//public bool coHappen = false;
-
 
 	// Use this for initialization
 	void Start () {
@@ -19,49 +21,57 @@ public class tree : Life {
 
 		HP = 200; // (temp number) need to set the different numbers
 		ATK = 40; //
-
-		lars = GameObject.Find("Lars");
 	}
 	
 	// Update is called once per frame
 	 void Update () {
-		/*valueX = lars.position.x -= tree.position.x; // x-axis distance from the tree and lars 
-		valueZ = lars.position.z -= tree.position.z; // z-axis distance from the tree and lars
+		valueX = Lars.GetLarsX() - transform.position.x; // x-axis distance from the tree and lars 
+		valueZ = Lars.GetLarsZ() - transform.position.z; // z-axis distance from the tree and lars
 
-		if (valueX < 0 && valueX > 1 && valueZ < 0 && valueZ > 1) {
+		if (valueX < 0.0f && valueX > 1.0f && valueZ < 0.0f && valueZ > 1.0f) {
 			// attack
-			larsOldPos = lars.transform.position;
+			LarsOldX = Lars.GetLarsX();
+			LarsOldY = Lars.GetLarsY();
+			LarsOldZ = Lars.GetLarsZ();
 			Invoke ("damageFunction", 2);				
 		} 
-		if (valueX < 1 && valueX > 2 && valueZ < 1 && valueZ > 2) {
+		if (valueX < 1.0f && valueX > 2.0f && valueZ < 1.0f && valueZ > 2.0f) {
 			// attack 
-			larsOldPos = lars.transform.position;
+			LarsOldX = Lars.GetLarsX();
+			LarsOldY = Lars.GetLarsY();
+			LarsOldZ = Lars.GetLarsZ();
 			Invoke ("damageFunction", 3);				
 		} 
-		if (valueX < 2 && valueX > 3 && valueZ < 2 && valueZ > 3) {
+		if (valueX < 2.0f && valueX > 3.0f && valueZ < 2.0f && valueZ > 3.0f) {
 			// attack 
-			larsOldPos = lars.transform.position;
+			LarsOldX = Lars.GetLarsX();
+			LarsOldY = Lars.GetLarsY();
+			LarsOldZ = Lars.GetLarsZ();
 			Invoke ("damageFunction", 4);				
 		} 
-		if (valueX < 5 && valueX > 3 && valueZ < 5 && valueZ > 3) {
+		if (valueX < 5.0f && valueX > 3.0f && valueZ < 5.0f && valueZ > 3.0f) {
 			// attack 
-			larsOldPos = lars.transform.position;
+			LarsOldX = Lars.GetLarsX();
+			LarsOldY = Lars.GetLarsY();
+			LarsOldZ = Lars.GetLarsZ();
 			Invoke ("damageFunction", 5);
 		} 
-		if (valueX < 5 && valueX > 6 && valueZ < 5 && valueZ > 6) {
+		if (valueX < 5.0f && valueX > 6.0f && valueZ < 5.0f && valueZ > 6.0f) {
 			// attack 
-			larsOldPos = lars.transform.position;
+			LarsOldX = Lars.GetLarsX();
+			LarsOldY = Lars.GetLarsY();
+			LarsOldZ = Lars.GetLarsZ();
 			Invoke ("damageFunction", 6);
-		}*/
+		}
 		
 		if (HP <= 0){
 			Destroy(gameObject);
 		}
 	} 
 
-	/*public void damageFunction () {
-		Instantiate (treeRoot, larsOldPos);
-	}*/
+	public void damageFunction () {
+		Instantiate (treeRoot, new Vector3 (LarsOldX,LarsOldY,LarsOldZ), transform.rotation);
+	}
 
 	void OnCollisionEnter(Collision other) {
 		if (other.gameObject.name == "BallOfFire(Clone)"){ 
