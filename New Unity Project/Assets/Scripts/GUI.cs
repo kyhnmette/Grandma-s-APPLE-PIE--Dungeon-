@@ -39,8 +39,8 @@ public class GUI : MonoBehaviour {
 			}
 		}
 		
-		if (Input.GetKeyDown (KeyCode.P)){
-			// This section functions as the pause button, click on P to "turn off" the game mid-game and P again to "turn on" the game
+		if (Input.GetKeyDown (KeyCode.Space)){
+			// This section functions as the pause button, click on SPACE to "turn off" the game mid-game and SPACE again to "turn on" the game
 			if (GameOn == true)
 				GameOn = false;
 			else if (GameOn == false)
