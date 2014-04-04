@@ -10,10 +10,17 @@ public class AppleRed : Apple {
 	// Use this for initialization
 	void Start () {
 		ATK = 15;
+		HP = 50;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+	}
+		void OnCollisionEnter(Collision other){
+		if(other.gameObject.name == "BallOfFire(Clone)"){
+			HP -= BallOfFire.GetBallDmg();
+		}
 	
 	}
 }
