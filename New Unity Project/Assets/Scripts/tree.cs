@@ -1,4 +1,4 @@
-﻿/*using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 
 public class tree : Life {
@@ -6,7 +6,7 @@ public class tree : Life {
 	public GameObject treeRoot;
 	public GameObject lars;
 	public float valueX;
-	public float valueY;
+	public float valueZ;
 	public Vector3 larsOldPos;
 	public bool larsCol = false;
 	//public bool coHappen = false;
@@ -26,70 +26,49 @@ public class tree : Life {
 	// Update is called once per frame
 	 void Update () {
 		valueX = lars.position.x -= tree.position.x; // x-axis distance from the tree and lars 
-		valueY = lars.position.y -= tree.position.y; // y-axis distance from the tree and lars
+		valueZ = lars.position.z -= tree.position.z; // z-axis distance from the tree and lars
 
-		if (valueX < 0 && valueX > 1 && valueY < 0 && valueY > 1) {
-			// attack 
+		if (valueX < 0 && valueX > 1 && valueZ < 0 && valueZ > 1) {
+			// attack
 			larsOldPos = lars.transform.position;
 			Invoke ("damageFunction", 2);				
-
-			//}
 		} 
-
-		if (valueX < 1 && valueX > 2 && valueY < 1 && valueY > 2) {
+		if (valueX < 1 && valueX > 2 && valueZ < 1 && valueZ > 2) {
 			// attack 
 			larsOldPos = lars.transform.position;
 			Invoke ("damageFunction", 3);				
-
-
 		} 
-		{	if (valueX < 2 && valueX > 3 && valueY < 2 && valueY > 3) {
+		if (valueX < 2 && valueX > 3 && valueZ < 2 && valueZ > 3) {
 			// attack 
 			larsOldPos = lars.transform.position;
 			Invoke ("damageFunction", 4);				
-
-
 		} 
-
-		if (valueX < 5 && valueX > 3 && valueY < 5 && valueY > 3) {
+		if (valueX < 5 && valueX > 3 && valueZ < 5 && valueZ > 3) {
 			// attack 
 			larsOldPos = lars.transform.position;
 			Invoke ("damageFunction", 5);
-
-
 		} 
-		if (valueX < 5 && valueX > 6 && valueY < 5 && valueY > 6) {
+		if (valueX < 5 && valueX > 6 && valueZ < 5 && valueZ > 6) {
 			// attack 
 			larsOldPos = lars.transform.position;
 			Invoke ("damageFunction", 6);
-				lars.life.HP - 10;
-			}
-		} 
+		}
+		
+		if (HP <= 0){
+			Destroy(gameObject);
+		}
+	} 
 
-	void damageFunction ()
-	{
+	public void damageFunction () {
 		Instantiate (treeRoot, larsOldPos);
-
 	}
 
-
-
-
-	 
-
-
-
 	void OnCollisionEnter(Collision other) {
-			if (other.gameObject.name == "larsBall"){ // doesn't know the rigth name yet 
-				HP =- 20; // doesn't know what lars ATK will be 
-			}
-			if (HP <= 0){
-				Destroy(gameObject);
-			}
-
+		if (other.gameObject.name == "BallOfFire(Clone)"){ 
+			GetHit (BallOfFire.GetBallDmg ());  
+		}
 
 	}
 
 	
 }
-*/
