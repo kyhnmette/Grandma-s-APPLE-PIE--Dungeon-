@@ -45,12 +45,12 @@ public class spawnBush : MonoBehaviour {
 	//-------------------------LVLBOSS-------------------------
 	
 	// The list of bushes (Horizontal)
-	private float[] DOWNposX = {3.5f,9.5f,15.5f,1.5f,7.5f,13.5f, 3.5f, 9.5f,15.5f};
-	private float[] DOWNposZ = {4.5f,4.5f, 4.5f,7.5f,7.5f, 7.5f,10.5f,10.5f,10.5f};
+	private float[] DOWNposX = {3.5f/*,9.5f,15.5f,1.5f,7.5f,13.5f, 3.5f, 9.5f,15.5f*/};
+	private float[] DOWNposZ = {4.5f/*,4.5f, 4.5f,7.5f,7.5f, 7.5f,10.5f,10.5f,10.5f*/};
 	
 	// The list of bushes (Vertical)
-	private float[] UPposX = { 3.5f,12.5f,12.5f};
-	private float[] UPposZ = {11.5f,11.5f,15.5f};
+	private float[] UPposX = { 3.5f/*,12.5f,12.5f*/};
+	private float[] UPposZ = {11.5f/*,11.5f,15.5f*/};
 	
 	//-------------------------LVLBOSS-------------------------
 	

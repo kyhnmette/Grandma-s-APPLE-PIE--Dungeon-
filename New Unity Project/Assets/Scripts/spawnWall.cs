@@ -38,7 +38,7 @@ public class spawnWall : MonoBehaviour {
 		GameObject floarSpawn = (GameObject)Instantiate(TheFloar, new Vector3(10.5f,-0.5f,10.5f), transform.rotation);
 		GameObject BACKgroundSpawn = (GameObject)Instantiate(BACKGROUND, new Vector3(11f,-2.5f,11f), transform.rotation);
 		
-		GameObject LarsSpawn = (GameObject)Instantiate(TheLarch, new Vector3(1.5f,2f,1.5f), transform.rotation);
+		GameObject LarsSpawn = (GameObject)Instantiate(TheLarch, new Vector3(7.5f,2f,7.5f), transform.rotation);
 		LarsSpawn.name = "Lars";
 		
 		/*for (float i = 1.5f; i<21; i++){ //test cube to tjek out sizes
@@ -47,11 +47,11 @@ public class spawnWall : MonoBehaviour {
 		
 		/*GameObject heartspawn = (GameObject)Instantiate(TestHEART, new Vector3(7.5f,0f,4.5f), transform.rotation);
 		
-		GameObject seedSpawn = (GameObject)Instantiate(TestSEED, new Vector3(5.5f,0f,9.5f), transform.rotation);
+		GameObject seedSpawn = (GameObject)Instantiate(TestSEED, new Vector3(5.5f,0f,9.5f), transform.rotation);*/
 		
 		GameObject APPLEGSpawn = (GameObject)Instantiate(TestAPPLEG, new Vector3(16.5f,3f,5.5f), transform.rotation);
 		GameObject APPLEYSpawn = (GameObject)Instantiate(TestAPPLEY, new Vector3(16.5f,3f,7.5f), transform.rotation);
-		GameObject APPLERSpawn = (GameObject)Instantiate(TestAPPLER, new Vector3(16.5f,3f,9.5f), transform.rotation);*/
+		GameObject APPLERSpawn = (GameObject)Instantiate(TestAPPLER, new Vector3(16.5f,3f,9.5f), transform.rotation);
 		
     }
 	

@@ -5664,7 +5664,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 122
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &6500000
 BoxCollider:
@@ -5737,8 +5737,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfa05a9e480ad1845b18a6d372145042, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Larch: {fileID: 100000, guid: c78c04e7d7e05d34b81305a8eb8044c2, type: 2}
-  EvilApple: {fileID: 100404}
+  Larch: {fileID: 400000, guid: c78c04e7d7e05d34b81305a8eb8044c2, type: 2}
+  EvilApple: {fileID: 400404}
 --- !u!136 &13600000
 CapsuleCollider:
   m_ObjectHideFlags: 1
