@@ -6,8 +6,8 @@ public class CamPos : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		
-		transform.position = new Vector3(10.5f, 18f, 10f);
-		transform.eulerAngles = new Vector3(90f, 0, 0);
+		transform.position = new Vector3(10.5f, 14f, 0f);
+		transform.eulerAngles = new Vector3(60f, 0, 0);
 	
 	}
 	
