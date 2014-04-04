@@ -27,7 +27,7 @@ public class GUI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.Space)){
+		if (Input.GetKeyDown (KeyCode.Return)){
 			// This section handles the intro and How to play scenes, click SPACE to continue
 			if (IntroMenuOn == true){
 				IntroMenuOn = false;
