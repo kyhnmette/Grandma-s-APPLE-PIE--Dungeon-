@@ -5,7 +5,7 @@ public class Life : MonoBehaviour {
 	
 	protected static short HP;
 	protected short ATK;
-	protected short Speed;
+	protected float Speed;
 
 	// Use this for initialization
 	void Start () {
