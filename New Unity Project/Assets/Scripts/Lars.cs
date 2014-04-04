@@ -59,6 +59,9 @@ public class Lars : Life {
 		
 			if (HP > MaxHP)
 				HP = MaxHP;
+			if (HP <= 0){
+				Destroy (gameObject);
+			}
 		}
 	}
 	

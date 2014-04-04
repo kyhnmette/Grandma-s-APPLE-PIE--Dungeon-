@@ -18,12 +18,20 @@ public class Apple : Life {
 	// Update is called once per frame
 	void Update () {
 		
-			if (GUI.GetGameOn() == true){
+		if (GUI.GetGameOn() == true){
 			Frames++;			// Counts the timer up
 			if (Frames == 24){	// the timer there runs each secound
 				Frames = 0;		// Resets the timer
 			}
 		}
+		if (Vector3.Distance(transform.position,Larch.position)>30.0f)
+		{
+			print ("hi" + Vector3.Distance(transform.position,Larch.position));
+			transform.LookAt(Larch);
+			transform.Translate(Vector3.forward * Time.deltaTime);
+		}
+		float pos = Vector3.Distance(transform.position,Larch.position);
+		print (pos);
 	}
 	
 	void OnCollisionEnter (Collision other) {
