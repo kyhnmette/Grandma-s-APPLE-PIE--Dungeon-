@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BallOfFire : MonoBehaviour {
 	
-	private float BallSpeed = 100.0f;
+	private float BallSpeed = 300.0f;
 	private static short BallDmg;
 	private int Frames = 0;
 
