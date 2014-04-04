@@ -11,6 +11,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400004}
+  - 114: {fileID: 11400006}
   m_Layer: 0
   m_Name: TheSpawner
   m_TagString: Untagged
@@ -78,6 +79,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DaBushDOWN: {fileID: 100002, guid: 32bb854c8702cbb4a93b6b9b92c1c919, type: 2}
   DaBushUP: {fileID: 100000, guid: 8d3b730a919545043bf0dd1eb938ab25, type: 2}
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c1f802055fe9464e99a24f3da0c2ce5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthBar: {fileID: 100000, guid: 809bf8a0143330a409eed67fd1e119e7, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
