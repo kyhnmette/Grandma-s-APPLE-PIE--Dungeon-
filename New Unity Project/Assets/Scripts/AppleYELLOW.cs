@@ -9,13 +9,14 @@ public class AppleYELLOW : Apple {
 
 	// Use this for initialization
 	void Start () {
+		AppleScriptStart ();
 		ATK = 10;
 		HP = 35;
-	
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		AppleScriptUpdate ();
 		if (HP <= 0){
 			Destroy (gameObject);
 		}
