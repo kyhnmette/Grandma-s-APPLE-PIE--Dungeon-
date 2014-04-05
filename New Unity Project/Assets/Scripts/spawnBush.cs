@@ -59,11 +59,11 @@ public class spawnBush : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		for (int i = 0; i < DOWNposX.Length; i++) {
-			GameObject BushSpawn = (GameObject)Instantiate(DaBushDOWN, new Vector3(DOWNposX[i],1.0f,DOWNposZ[i]), transform.rotation);
+			GameObject.Instantiate(DaBushDOWN, new Vector3(DOWNposX[i],1.0f,DOWNposZ[i]), transform.rotation);
 		}
 		
 		for (int i = 0; i < UPposX.Length; i++) {
-			GameObject BushSpawn = (GameObject)Instantiate(DaBushUP, new Vector3(UPposX[i],1.0f,UPposZ[i]), transform.rotation);
+			GameObject.Instantiate(DaBushUP, new Vector3(UPposX[i],1.0f,UPposZ[i]), transform.rotation);
 		}
 		
 		
