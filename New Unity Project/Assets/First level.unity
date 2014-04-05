@@ -169,7 +169,9 @@ GameObject:
   - 114: {fileID: 650761234}
   - 114: {fileID: 650761237}
   - 114: {fileID: 650761238}
+  - 114: {fileID: 650761240}
   - 114: {fileID: 650761236}
+  - 114: {fileID: 650761239}
   m_Layer: 0
   m_Name: TheSpawner
   m_TagString: Untagged
@@ -252,6 +254,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 100000, guid: 809bf8a0143330a409eed67fd1e119e7, type: 2}
+--- !u!114 &650761239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 650761233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67657f3d9c558b544beea1da5b77b9ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TreeSpawn: {fileID: 100000, guid: 01cac1ece476fb1499dbe4794d988d78, type: 2}
+--- !u!114 &650761240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400008, guid: f5cad009f2712454e877951c5f782c37,
+    type: 2}
+  m_PrefabInternal: {fileID: 962793841}
+  m_GameObject: {fileID: 650761233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67657f3d9c558b544beea1da5b77b9ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TreeSpawn: {fileID: 100000, guid: 01cac1ece476fb1499dbe4794d988d78, type: 2}
 --- !u!1 &749935058
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,7 +398,7 @@ GUITexture:
     type: 2}
   m_PrefabInternal: {fileID: 436706893}
   m_GameObject: {fileID: 1115531428}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Texture: {fileID: 2800000, guid: b9bf1f13a155f124e893129d8b29feec, type: 3}
   m_Color: {r: .5, g: .5, b: .5, a: .5}
   m_PixelInset:
@@ -468,6 +495,47 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e691a596626bb84babeec6906fab8df, type: 3}
   m_Name: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
   m_EditorClassIdentifier: 
   m_EditorClassIdentifier: 
   m_EditorClassIdentifier: 
