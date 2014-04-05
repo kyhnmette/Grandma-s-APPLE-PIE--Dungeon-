@@ -9,7 +9,7 @@ public class Apple : Life {
 	public GameObject EvilApple; //The apple carrying the script must be assigned to this place.
 	
 	// Use this for initialization
-	void Start () {
+	public override void Start () {
 		
 		Speed = 1;
 		
@@ -38,6 +38,7 @@ public class Apple : Life {
 		if (other.gameObject.name == "BallOfFire(Clone)")
 		{
 			GetHit(BallOfFire.GetBallDmg ());	// When the Ball of Fire hits an apple it will get hit with the ball's damage
+			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHP());
 		}
 		if (other.gameObject.name == "Lars")
 		{

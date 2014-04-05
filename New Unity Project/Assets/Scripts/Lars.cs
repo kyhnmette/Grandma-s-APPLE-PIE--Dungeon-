@@ -14,10 +14,6 @@ public class Lars : Life {
 	
 	public GameObject Spawn;
 	
-	public static int GetHP () {
-		return HP;
-	}
-	
 	public static float GetLarsX () {
 		return LarsX;
 	}
@@ -31,8 +27,7 @@ public class Lars : Life {
 	}
 	
 	// Use this for initialization
-	void Start () {
-	
+	public override void Start () {
 		HP = 100;
 		MaxHP = 150;
 		Points = 0;
@@ -78,9 +73,8 @@ public class Lars : Life {
 			}
 		
 			if (HP > MaxHP)
+			{
 				HP = MaxHP;
-			if (HP <= 0){
-				Destroy (gameObject);
 			}
 		}
 	}
@@ -94,19 +88,19 @@ public class Lars : Life {
 		}
 		if(other.gameObject.name == "GreenAPPLE(Clone)"){
 			HP = HP - AppleGREEN.GetATK ();
-			print (HP);
+			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHP());
 		}
 		if(other.gameObject.name == "YellowAPPLE(Clone)"){
 			HP -= AppleYELLOW.GetATK ();
-			print (HP);
+			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHP());
 		}
 		if(other.gameObject.name == "RedAPPLE(Clone)"){
 			HP -= AppleRed.GetATK ();
-			print (HP);
+			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHP());
 		}
 		if(other.gameObject.name == "Branch(Clone)"){
 			HP -= TreeRoot.GetATK ();
-			print (HP);
+			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHP());
 		}
 		if(other.gameObject.name == "Tree(Clone)"){
 			HP = 0;

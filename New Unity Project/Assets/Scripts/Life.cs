@@ -6,16 +6,25 @@ public class Life : MonoBehaviour {
 	protected static int HP;
 	protected static int ATK;
 	protected float Speed;
+	public GameObject ScriptOWNER;
+	
+	public static int GetATK() {
+		return ATK;
+	}
+	
+	public static int GetHP() {
+		return HP;
+	}
 
 	// Use this for initialization
-	void Start () {
+	public virtual void Start () {
+		
+		HP = 1;
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (HP <= 0)
-			Destroy(gameObject);
 	}
 	
 	public void GetHit (int DmgTaken) {
