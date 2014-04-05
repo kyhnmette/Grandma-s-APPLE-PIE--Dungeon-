@@ -35,12 +35,12 @@ public class Lars : Life {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		LarsX = transform.position.x;	// Gets Larses current X coordinates
-		LarsY = transform.position.y;	// Gets Larses current Y coordinates
-		LarsZ = transform.position.z;	// Gets Larses current Z coordinate 
-		
+	void Update () { 
 		if (GUI.GetGameOn() == true){
+			LarsX = transform.position.x;	// Gets Larses current X coordinates
+			LarsY = transform.position.y;	// Gets Larses current Y coordinates
+			LarsZ = transform.position.z;	// Gets Larses current Z coordinate
+			
 			if (Input.GetKey(KeyCode.A)){
 				transform.position += new Vector3(-3.0f, 0, 0)* Time.deltaTime;	//x position, movin left
 				transform.eulerAngles = new Vector3(0, 270, 0);
