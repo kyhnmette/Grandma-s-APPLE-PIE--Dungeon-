@@ -3,6 +3,8 @@ using System.Collections;
 
 class AppleYELLOW : Apple {
 
+	public GameObject nextLevel2;
+
 	public static int GetATK() {
 		return ATK;
 	}
@@ -20,6 +22,7 @@ class AppleYELLOW : Apple {
 		AppleScriptUpdate ();
 		if (HP <= 0){
 			Destroy (gameObject);
+			GameObject.Instantiate(nextLevel2, new Vector3(10f,1f,5f), transform.rotation);
 		}
 	}
 }

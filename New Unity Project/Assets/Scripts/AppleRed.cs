@@ -3,6 +3,8 @@ using System.Collections;
 
 public class AppleRed : Apple {
 
+	public GameObject nextLevel3;
+
 	public static int GetATK() {
 		return ATK;
 	}
@@ -21,6 +23,7 @@ public class AppleRed : Apple {
 		
 		if (HP <= 0){
 			Destroy (gameObject);
+			GameObject.Instantiate(nextLevel3, new Vector3(10f,1f,5f), transform.rotation);
 		}
 	}
 }

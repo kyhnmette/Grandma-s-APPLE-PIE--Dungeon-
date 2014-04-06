@@ -7,6 +7,7 @@ public class Apple : Life {
 	private float DistanceZ;
 	private short Frames = 0;	// Sets a number of frames to make a timer
 	private bool InRange;
+
 	
 	public Transform Larch; //put Lars here
 	
