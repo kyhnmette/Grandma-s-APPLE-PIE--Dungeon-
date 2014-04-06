@@ -9,9 +9,11 @@ public class Health : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
+		DontDestroyOnLoad (transform.gameObject);
 
 		//GameObject healthBar = (GameObject)Instantiate(Resources.Load("nontexturedAPPLE"));
-		GameObject healthBarSwan = (GameObject)Instantiate(healthBar, new Vector3(5f,1f,10), transform.rotation);
+		GameObject.Instantiate(healthBar, new Vector3(5f,1f,10f), transform.rotation);
+
 	}
 	
 	// Update is called once per frame

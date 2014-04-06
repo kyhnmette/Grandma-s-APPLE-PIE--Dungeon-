@@ -32,6 +32,8 @@ using System.Collections;
 		MaxHP = 150;
 		Points = 0;
 		HeroHP = 100;
+	
+		DontDestroyOnLoad (transform.gameObject);
 	}
 	
 	
