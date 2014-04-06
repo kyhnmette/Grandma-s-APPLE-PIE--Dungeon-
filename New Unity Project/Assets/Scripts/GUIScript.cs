@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GUI : MonoBehaviour {
+public class GUIScript : MonoBehaviour {
 	
 	private bool IntroMenuOn;
 	private bool HowToMenuOn;

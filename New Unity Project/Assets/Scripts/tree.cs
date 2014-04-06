@@ -24,7 +24,7 @@ public class tree : Life {
 	
 	// Update is called once per frame
 	void Update () {
-		if (GUI.GetGameOn() == true){
+		if (GUIScript.GetGameOn() == true){
 			valueX = Lars.GetLarsX() - transform.position.x; // x-axis distance from the tree and lars 
 			valueZ = Lars.GetLarsZ() - transform.position.z; // z-axis distance from the tree and lars
 		

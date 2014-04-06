@@ -26,7 +26,7 @@ public class Apple : Life {
 	}
 	
 	public void AppleScriptUpdate () {
-		if (GUI.GetGameOn() == true){
+		if (GUIScript.GetGameOn() == true){
 			DistanceX = Mathf.Abs (transform.position.x) - Mathf.Abs(Lars.GetLarsX());	// Calculates the distance on the x-axies of Lars and the apple by using the abselute value
 			DistanceZ = Mathf.Abs (transform.position.z) - Mathf.Abs(Lars.GetLarsZ());	// Calculates the distance on the z-axies of Lars and the apple by using the abselute value
 			

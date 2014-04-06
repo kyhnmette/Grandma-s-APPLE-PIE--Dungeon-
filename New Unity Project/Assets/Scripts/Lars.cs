@@ -25,6 +25,10 @@ using System.Collections;
 	public static float GetLarsZ () {
 		return LarsZ;
 	}
+
+	public static int GetHeroHP() {
+		return HeroHP;
+	}
 	
 	// Use this for initialization
 	public override void Start () {
@@ -39,7 +43,8 @@ using System.Collections;
 	
 	// Update is called once per frame
 	void Update () { 
-		if (GUI.GetGameOn() == true){
+
+		if (GUIScript.GetGameOn() == true){
 			LarsX = transform.position.x;	// Gets Larses current X coordinates
 			LarsY = transform.position.y;	// Gets Larses current Y coordinates
 			LarsZ = transform.position.z;	// Gets Larses current Z coordinate
