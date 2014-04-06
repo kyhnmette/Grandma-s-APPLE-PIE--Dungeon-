@@ -8,7 +8,7 @@ public class AppleYELLOW : Apple {
 	}
 
 	// Use this for initialization
-	void Start () {
+	public override void Start () {
 		AppleScriptStart ();
 		ATK = 10;
 		HP = 35;

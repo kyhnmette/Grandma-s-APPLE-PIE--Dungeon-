@@ -55,7 +55,7 @@ public class Apple : Life {
 	void OnCollisionEnter (Collision other) {
 		if (other.gameObject.name == "BallOfFire(Clone)"){
 			GetHit(BallOfFire.GetBallDmg ());	// When the Ball of Fire hits an apple it will get hit with the ball's damage
-			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHP());
+			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHeroHP());
 		}
 		
 		if (other.gameObject.name == "Lars"){

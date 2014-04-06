@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Lars : Life {
+ class Lars : Life {
 	
 	private short BallCoolDown = 48;
 	private bool BallIsReady = true;
@@ -27,12 +27,12 @@ public class Lars : Life {
 	}
 	
 	// Use this for initialization
-	public override void Start () {
-		HP = 100;
+	void Start () {
 		MaxHP = 150;
 		Points = 0;
-		
+		HeroHP = 100;
 	}
+	
 	
 	// Update is called once per frame
 	void Update () { 

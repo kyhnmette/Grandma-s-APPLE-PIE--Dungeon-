@@ -8,10 +8,10 @@ public class AppleRed : Apple {
 	}
 
 	// Use this for initialization
-	void Start () {
+	public override void Start () {
 		AppleScriptStart ();
 		ATK = 15;
-		HP = 50;
+		//HP = 50;
 	}
 	
 	// Update is called once per frame
