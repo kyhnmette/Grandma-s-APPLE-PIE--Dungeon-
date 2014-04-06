@@ -16,12 +16,13 @@ public class Life : MonoBehaviour {
 	public static int GetHP() {
 		return HP;
 	}
-		public static int GetHeroHP() {
+	public static int GetHeroHP() {
 		return HeroHP;
 	}
 	
 	// Use this for initialization
 	public virtual void Start () {
+		HeroHP = 1;
 	}
 	
 	// Update is called once per frame
@@ -30,5 +31,7 @@ public class Life : MonoBehaviour {
 	
 	public void GetHit (int DmgTaken) {
 		HP -= DmgTaken;
+	}
+	public virtual void TestFunktion(){
 	}
 }

@@ -1,14 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AppleGREEN : Apple {
+class AppleGREEN : Apple {
 
 	public static int GetATK() {
 		return ATK;
 	}
 
 	// Use this for initialization
-	void Start () {
+	public override void Start () {
+		base.Start();
 		AppleScriptStart ();
 		ATK = 5;
 		HP = 20;
@@ -21,13 +22,5 @@ public class AppleGREEN : Apple {
 		if (HP <= 0){
 			Destroy (gameObject);
 		}
-
-
-
 	}
-
-
-			
-
-
 }

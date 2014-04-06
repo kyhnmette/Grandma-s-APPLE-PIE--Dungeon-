@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class AppleYELLOW : Apple {
+class AppleYELLOW : Apple {
 
 	public static int GetATK() {
 		return ATK;
@@ -9,6 +9,7 @@ public class AppleYELLOW : Apple {
 
 	// Use this for initialization
 	public override void Start () {
+		base.Start();
 		AppleScriptStart ();
 		ATK = 10;
 		HP = 35;
@@ -21,6 +22,4 @@ public class AppleYELLOW : Apple {
 			Destroy (gameObject);
 		}
 	}
-
-
 }

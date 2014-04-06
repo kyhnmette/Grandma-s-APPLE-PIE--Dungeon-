@@ -9,6 +9,7 @@ public class AppleRed : Apple {
 
 	// Use this for initialization
 	public override void Start () {
+		base.Start();
 		AppleScriptStart ();
 		ATK = 15;
 		//HP = 50;
@@ -22,7 +23,5 @@ public class AppleRed : Apple {
 			Destroy (gameObject);
 		}
 	}
-		
-	
-	}
+}
 

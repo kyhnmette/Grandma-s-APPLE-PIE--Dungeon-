@@ -27,7 +27,8 @@ using System.Collections;
 	}
 	
 	// Use this for initialization
-	void Start () {
+	public override void Start () {
+		base.Start();
 		MaxHP = 150;
 		Points = 0;
 		HeroHP = 100;
