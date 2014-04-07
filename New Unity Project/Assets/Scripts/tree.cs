@@ -19,7 +19,7 @@ public class tree : Life {
 		ATK = 40; //
 		ATKtimer = 0;
 		ATKready = true;
-		GameObject SpawnTreeRoot = (GameObject)Instantiate(treeRoot, new Vector3(11.0f,-3.0f,11.0f), transform.rotation);
+		GameObject.Instantiate(treeRoot, new Vector3(11.0f,-3.0f,11.0f), transform.rotation);
 	}
 	
 	// Update is called once per frame

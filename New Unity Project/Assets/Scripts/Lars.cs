@@ -37,7 +37,7 @@ using System.Collections;
 		Points = 0;
 		HeroHP = 100;
 	
-		DontDestroyOnLoad (transform.gameObject);
+		DontDestroyOnLoad (transform.gameObject); //makes sure that the Hero does not get destroyed and keeps his stats when the level changes
 	}
 	
 	
@@ -89,29 +89,29 @@ using System.Collections;
 	
 	void OnCollisionEnter(Collision other){
 		if(other.gameObject.name == "HeartHP(Clone)"){
-			HP += 5;
+			HeroHP += 5;
 		}
 		if(other.gameObject.name == "appleseed(Clone)"){
 			Points += 1;
 		}
 		if(other.gameObject.name == "GreenAPPLE(Clone)"){
-			HP = HP - AppleGREEN.GetATK ();
+			HeroHP -= AppleGREEN.GetATK ();
 			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHP());
 		}
 		if(other.gameObject.name == "YellowAPPLE(Clone)"){
-			HP -= AppleYELLOW.GetATK ();
+			HeroHP -= AppleYELLOW.GetATK ();
 			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHP());
 		}
 		if(other.gameObject.name == "RedAPPLE(Clone)"){
-			HP -= AppleRed.GetATK ();
+			HeroHP -= AppleRed.GetATK ();
 			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHP());
 		}
 		if(other.gameObject.name == "Branch(Clone)"){
-			HP -= TreeRoot.GetATK ();
+			HeroHP -= TreeRoot.GetATK ();
 			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHP());
 		}
 		if(other.gameObject.name == "Tree(Clone)"){
-			HP = 0;
+			HeroHP = 0;
 		}
 	}
 }

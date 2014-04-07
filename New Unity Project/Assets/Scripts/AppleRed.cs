@@ -14,7 +14,7 @@ public class AppleRed : Apple {
 		base.Start();
 		AppleScriptStart ();
 		ATK = 15;
-		//HP = 50;
+		HP = 50;
 	}
 	
 	// Update is called once per frame
@@ -23,7 +23,7 @@ public class AppleRed : Apple {
 		
 		if (HP <= 0){
 			Destroy (gameObject);
-			GameObject.Instantiate(nextLevel3, new Vector3(10f,1f,5f), transform.rotation);
+			GameObject.Instantiate(nextLevel3, new Vector3(2f,1f,2f), transform.rotation);
 		}
 	}
 }

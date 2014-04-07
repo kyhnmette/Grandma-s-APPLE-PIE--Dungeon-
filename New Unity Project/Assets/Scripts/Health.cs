@@ -16,8 +16,6 @@ public class Health : MonoBehaviour {
 		GameObject.Instantiate(healthBar, new Vector3(5f,1f,10f), transform.rotation);
 		hpBar = GameObject.Find ("wallSubstitute(Clone)");
 		hpBar.transform.Rotate(0,0,90f);
-
-
 	}
 	
 	// Update is called once per frame
@@ -26,7 +24,7 @@ public class Health : MonoBehaviour {
 		if (Lars.GetHeroHP() <= 0) {
 			Destroy (gameObject);
 		}
-		print (Lars.GetHeroHP());
+		//print (Lars.GetHeroHP());
 		//transform.localScale = new Vector3(transform.localScale.x, Lars.GetHeroHP(), transform.localScale.z);
 
 	}

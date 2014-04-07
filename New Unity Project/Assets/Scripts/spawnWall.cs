@@ -7,12 +7,12 @@ public class spawnWall : MonoBehaviour {
 	public GameObject myCubeUP;
 	public GameObject TheFloar;
 	//public GameObject testCUBE;
-	public GameObject TheLarch;
+	/*public GameObject TheLarch;
 	public GameObject TestHEART;
 	public GameObject TestSEED;
 	public GameObject TestAPPLEG;
 	public GameObject TestAPPLEY;
-	public GameObject TestAPPLER;
+	public GameObject TestAPPLER;*/
 	public GameObject BACKGROUND;
  
     void Start() { //remember to change the vector coordinates according to the size of the object.
@@ -38,8 +38,8 @@ public class spawnWall : MonoBehaviour {
 		GameObject.Instantiate(TheFloar, new Vector3(10.5f,-0.5f,10.5f), transform.rotation);
 		GameObject.Instantiate(BACKGROUND, new Vector3(11f,-2.5f,11f), transform.rotation);
 		
-		GameObject LarsSpawn = (GameObject)Instantiate(TheLarch, new Vector3(3.5f,2f,7.5f), transform.rotation);
-		LarsSpawn.name = "Lars";
+		/*GameObject LarsSpawn = (GameObject)Instantiate(TheLarch, new Vector3(1.5f,2f,1.5f), transform.rotation);
+		LarsSpawn.name = "Lars";*/
 		
 		/*for (float i = 1.5f; i<21; i++){ //test cube to tjek out sizes
        		GameObject cubeSpawn = (GameObject)Instantiate(testCUBE, new Vector3(i,1f,i), transform.rotation);
@@ -49,11 +49,9 @@ public class spawnWall : MonoBehaviour {
 		
 		GameObject seedSpawn = (GameObject)Instantiate(TestSEED, new Vector3(5.5f,0f,9.5f), transform.rotation);*/
 		
-		GameObject.Instantiate(TestAPPLEG, new Vector3(16.5f,3f,5.5f), transform.rotation);
+		/*GameObject.Instantiate(TestAPPLEG, new Vector3(16.5f,3f,5.5f), transform.rotation);
 		GameObject.Instantiate(TestAPPLEY, new Vector3(16.5f,3f,7.5f), transform.rotation);
-		GameObject.Instantiate(TestAPPLER, new Vector3(16.5f,3f,9.5f), transform.rotation);
-		
-		print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHP());
+		GameObject.Instantiate(TestAPPLER, new Vector3(16.5f,3f,9.5f), transform.rotation);*/
 		
     }
 	

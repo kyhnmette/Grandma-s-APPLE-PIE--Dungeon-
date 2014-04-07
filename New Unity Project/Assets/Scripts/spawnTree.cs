@@ -7,7 +7,7 @@ public class spawnTree : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		GameObject SpawnTree = (GameObject)Instantiate(TreeSpawn, new Vector3(11.0f,1.0f,11.0f), transform.rotation);
+		GameObject.Instantiate(TreeSpawn, new Vector3(9.0f,1.0f,16.0f), transform.rotation);
 
 	}
 	

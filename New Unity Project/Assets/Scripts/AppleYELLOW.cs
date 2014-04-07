@@ -22,7 +22,7 @@ class AppleYELLOW : Apple {
 		AppleScriptUpdate ();
 		if (HP <= 0){
 			Destroy (gameObject);
-			GameObject.Instantiate(nextLevel2, new Vector3(10f,1f,5f), transform.rotation);
+			GameObject.Instantiate(nextLevel2, new Vector3(2f,1f,2f), transform.rotation);
 		}
 	}
 }
