@@ -26,7 +26,7 @@ using System.Collections;
 		return LarsZ;
 	}
 
-	public static int GetHeroHP() {
+	public static int GetHeroHP () {
 		return HeroHP;
 	}
 	
@@ -43,7 +43,7 @@ using System.Collections;
 	
 	// Update is called once per frame
 	void Update () { 
-
+		
 		if (GUIScript.GetGameOn() == true){
 			LarsX = transform.position.x;	// Gets Larses current X coordinates
 			LarsY = transform.position.y;	// Gets Larses current Y coordinates
@@ -80,9 +80,9 @@ using System.Collections;
 				
 			}
 		
-			if (HP > MaxHP)
+			if (HeroHP > MaxHP)
 			{
-				HP = MaxHP;
+				HeroHP = MaxHP;
 			}
 		}
 	}
@@ -96,19 +96,19 @@ using System.Collections;
 		}
 		if(other.gameObject.name == "GreenAPPLE(Clone)"){
 			HeroHP -= AppleGREEN.GetATK ();
-			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHP());
+			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHeroHP());
 		}
 		if(other.gameObject.name == "YellowAPPLE(Clone)"){
 			HeroHP -= AppleYELLOW.GetATK ();
-			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHP());
+			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHeroHP());
 		}
 		if(other.gameObject.name == "RedAPPLE(Clone)"){
 			HeroHP -= AppleRed.GetATK ();
-			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHP());
+			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHeroHP());
 		}
 		if(other.gameObject.name == "Branch(Clone)"){
 			HeroHP -= TreeRoot.GetATK ();
-			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHP());
+			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHeroHP());
 		}
 		if(other.gameObject.name == "Tree(Clone)"){
 			HeroHP = 0;
