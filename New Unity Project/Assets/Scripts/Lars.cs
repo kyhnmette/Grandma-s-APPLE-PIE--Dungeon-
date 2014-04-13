@@ -3,6 +3,8 @@ using System.Collections;
 
  class Lars : Life {
 	
+	public GameObject healthBar;
+	
 	private short BallCoolDown = 48;
 	private bool BallIsReady = true;
 	private short Points;
@@ -36,6 +38,8 @@ using System.Collections;
 		MaxHP = 150;
 		Points = 0;
 		HeroHP = 100;
+		
+		GameObject.Instantiate(healthBar, new Vector3(0f,3f,0f), transform.rotation);
 	
 		DontDestroyOnLoad (transform.gameObject); //makes sure that the Hero does not get destroyed and keeps his stats when the level changes
 	}

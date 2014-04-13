@@ -3,8 +3,10 @@ using System.Collections;
 
 public class Health : MonoBehaviour {
 
-	public GameObject healthBar;
-	public GameObject hpBar;
+	/*public GameObject healthBar;
+	public GameObject hpBar;*/
+	float DistanceX;
+	float DistanceZ;
 
 
 	// Use this for initialization
@@ -13,9 +15,8 @@ public class Health : MonoBehaviour {
 		DontDestroyOnLoad (transform.gameObject);
 
 		//GameObject healthBar = (GameObject)Instantiate(Resources.Load("nontexturedAPPLE"));
-		GameObject.Instantiate(healthBar, new Vector3(5f,1f,10f), transform.rotation);
-		hpBar = GameObject.Find ("wallSubstitute(Clone)");
-		hpBar.transform.Rotate(0,0,90f);
+		/*hpBar = GameObject.Find ("wallSubstitute(Clone)");
+		hpBar.transform.Rotate(0,0,90f);*/
 	}
 	
 	// Update is called once per frame
@@ -24,6 +25,10 @@ public class Health : MonoBehaviour {
 		if (Lars.GetHeroHP() <= 0) {
 			Destroy (gameObject);
 		}
+		DistanceX = Lars.GetLarsX();
+		DistanceZ = Lars.GetLarsZ();
+		
+		transform.position = new Vector3(DistanceX, 3f, DistanceZ);
 		//print (Lars.GetHeroHP());
 		//transform.localScale = new Vector3(transform.localScale.x, Lars.GetHeroHP(), transform.localScale.z);
 

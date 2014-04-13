@@ -760,6 +760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScriptOWNER: {fileID: 100000}
+  healthBar: {fileID: 100000, guid: 809bf8a0143330a409eed67fd1e119e7, type: 2}
   Spawn: {fileID: 100000, guid: 0dd319146faeb0b45b6bb672fe9bcc22, type: 2}
 --- !u!135 &13500000
 SphereCollider:
