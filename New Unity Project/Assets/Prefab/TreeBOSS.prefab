@@ -10,6 +10,7 @@ GameObject:
   - 4: {fileID: 400000}
   - 65: {fileID: 6500000}
   - 54: {fileID: 5400000}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: TreeBOSS
   m_TagString: Untagged
@@ -96,7 +97,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 14
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!65 &6500000
 BoxCollider:
@@ -122,6 +123,19 @@ Animator:
   m_CullingMode: 1
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e922baa61240a477b98b2ff01d94739a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptOWNER: {fileID: 0}
+  treeRoot: {fileID: 100000, guid: 77a1b4abd8ab62447a4c56bf2f784498, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

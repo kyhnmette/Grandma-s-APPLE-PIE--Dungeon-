@@ -84,6 +84,10 @@ using System.Collections;
 			{
 				HeroHP = MaxHP;
 			}
+			if (HeroHP <= 0)
+			{
+				Destroy (gameObject);
+			}
 		}
 	}
 	
