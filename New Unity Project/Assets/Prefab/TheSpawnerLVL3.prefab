@@ -57,7 +57,7 @@ MonoBehaviour:
   DaBushDOWN: {fileID: 100002, guid: 32bb854c8702cbb4a93b6b9b92c1c919, type: 2}
   DaBushUP: {fileID: 100000, guid: 8d3b730a919545043bf0dd1eb938ab25, type: 2}
   RedApple: {fileID: 100404, guid: 5afd744197128164897da2966d1d507c, type: 2}
-  TheLarch: {fileID: 100000, guid: c78c04e7d7e05d34b81305a8eb8044c2, type: 2}
+  TheLarch: {fileID: 100024, guid: c78c04e7d7e05d34b81305a8eb8044c2, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
