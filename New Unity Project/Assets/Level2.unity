@@ -74,6 +74,53 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
+--- !u!1 &536355930
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 64b38e280e755414fb2390f546ebff12, type: 2}
+  m_PrefabInternal: {fileID: 629576883}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 536355932}
+  - 131: {fileID: 536355931}
+  m_Layer: 0
+  m_Name: GUI Appleseed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!131 &536355931
+GUITexture:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 13100000, guid: 64b38e280e755414fb2390f546ebff12,
+    type: 2}
+  m_PrefabInternal: {fileID: 629576883}
+  m_GameObject: {fileID: 536355930}
+  m_Enabled: 1
+  m_Texture: {fileID: 2800000, guid: 68252ad1163fd22449a0ae23870162ef, type: 3}
+  m_Color: {r: .5, g: .5, b: .5, a: .5}
+  m_PixelInset:
+    serializedVersion: 2
+    x: 450
+    y: 40
+    width: 170
+    height: 250
+  m_LeftBorder: 0
+  m_RightBorder: 0
+  m_TopBorder: 0
+  m_BottomBorder: 0
+--- !u!4 &536355932
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 64b38e280e755414fb2390f546ebff12, type: 2}
+  m_PrefabInternal: {fileID: 629576883}
+  m_GameObject: {fileID: 536355930}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .5, y: .5, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
 --- !u!1 &542590402
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,6 +212,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7649ccddbb21f024dbd962eef5a17b17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &629576883
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 64b38e280e755414fb2390f546ebff12, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 64b38e280e755414fb2390f546ebff12, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 64b38e280e755414fb2390f546ebff12, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 64b38e280e755414fb2390f546ebff12, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 64b38e280e755414fb2390f546ebff12, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 64b38e280e755414fb2390f546ebff12, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 64b38e280e755414fb2390f546ebff12, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 64b38e280e755414fb2390f546ebff12, type: 2}
+  m_RootGameObject: {fileID: 536355930}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &1019292914
 GameObject:
   m_ObjectHideFlags: 0
@@ -173,6 +260,9 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1019292915}
+  - 114: {fileID: 1019292917}
+  - 114: {fileID: 1019292916}
+  - 114: {fileID: 1019292918}
   m_Layer: 0
   m_Name: TheSpawnerLVL2
   m_TagString: Untagged
@@ -191,6 +281,50 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+--- !u!114 &1019292916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 733ed4390142ae0478648e31eb821fa7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1952249406}
+  m_GameObject: {fileID: 1019292914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78d041cc0656cf144aaa54d1f27b5224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DaBushDOWN: {fileID: 100002, guid: 32bb854c8702cbb4a93b6b9b92c1c919, type: 2}
+  DaBushUP: {fileID: 100000, guid: 8d3b730a919545043bf0dd1eb938ab25, type: 2}
+  YellowApple: {fileID: 100404, guid: bfe7ace0fe57d914bb6e43e93d7e69aa, type: 2}
+  TheLarch: {fileID: 100000, guid: c78c04e7d7e05d34b81305a8eb8044c2, type: 2}
+--- !u!114 &1019292917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 733ed4390142ae0478648e31eb821fa7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1952249406}
+  m_GameObject: {fileID: 1019292914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fee0fa5c3f934db42a8584b891f901b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCubeDOWN: {fileID: 100000, guid: 1e795f17e4d931342936836e52243dc9, type: 2}
+  myCubeUP: {fileID: 100000, guid: 5d2961b0ef1c88b4781d6aa1d833a1db, type: 2}
+  TheFloar: {fileID: 100000, guid: 921a55f3ed98f2644bfd861fdfece082, type: 2}
+  BACKGROUND: {fileID: 100000, guid: 1457d2659d52abd449794149ed0b3d54, type: 2}
+--- !u!114 &1019292918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1019292914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3797df6f3e118e45b8e02263cf07790, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AppleSeed: {fileID: 536355931}
 --- !u!1 &1197004779
 GameObject:
   m_ObjectHideFlags: 0

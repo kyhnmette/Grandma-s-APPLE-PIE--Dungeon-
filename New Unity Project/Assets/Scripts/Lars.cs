@@ -7,7 +7,7 @@ using System.Collections;
 	
 	private short BallCoolDown = 48;
 	private bool BallIsReady = true;
-	private short Points;
+	private static short Points;
 	private int MaxHP;
 	
 	private static float LarsX;
@@ -30,6 +30,10 @@ using System.Collections;
 
 	public static int GetHeroHP () {
 		return HeroHP;
+	}
+	
+	public static short GetPoints () {
+		return Points;
 	}
 	
 	// Use this for initialization
@@ -100,7 +104,7 @@ using System.Collections;
 			HeroHP += 5;
 		}
 		if(other.gameObject.name == "appleseed(Clone)"){
-			Points += 1;
+			Points++;
 		}
 		if(other.gameObject.name == "GreenAPPLE(Clone)"){
 			HeroHP -= AppleGREEN.GetATK ();

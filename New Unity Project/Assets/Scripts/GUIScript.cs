@@ -64,14 +64,7 @@ public class GUIScript : MonoBehaviour {
 			HowToImage.enabled = false;
 		}
 		
-		if (Lars.GetHP() <= 0)
+		if (Lars.GetHeroHP() <= 0)
 			Lose.enabled = true;
-	}
-	
-	void OnGUI () {
-		// Here shall we insert the text labels for the game, example:
-		//GUI.Label(new Rect(10, 10, 200, 100), AppleSeeds);
-		// This one will show the number of apple seeds the player have collected.
-		// The numbers inside of Rect means: #1 Position from left, #2 Position from top, #3 Width and #4 Height of the box
 	}
 }
