@@ -9,9 +9,10 @@ public class Health : MonoBehaviour {
 	float DistanceZ;
 
 
+
 	// Use this for initialization
 	void Start () {
-
+	
 		DontDestroyOnLoad (transform.gameObject);
 
 		//GameObject healthBar = (GameObject)Instantiate(Resources.Load("nontexturedAPPLE"));
@@ -27,8 +28,10 @@ public class Health : MonoBehaviour {
 		}
 		DistanceX = Lars.GetLarsX();
 		DistanceZ = Lars.GetLarsZ();
-		
+
 		transform.position = new Vector3(DistanceX, 3f, DistanceZ);
+		transform.localScale = new Vector3(Lars.GetHeroHP()/60F, 0.2F, 0.2F);
+
 		//print (Lars.GetHeroHP());
 		//transform.localScale = new Vector3(transform.localScale.x, Lars.GetHeroHP(), transform.localScale.z);
 
