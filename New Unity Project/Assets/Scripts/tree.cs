@@ -15,8 +15,8 @@ public class tree : Life {
 
 	// Use this for initialization
 	void Start () {
-		HP = 200; // (temp number) need to set the different numbers
-		ATK = 40; //
+		HP = 150; 
+		ATK = 40; 
 		ATKtimer = 0;
 		ATKready = true;
 		GameObject.Instantiate(treeRoot, new Vector3(11.0f,-3.0f,11.0f), transform.rotation);

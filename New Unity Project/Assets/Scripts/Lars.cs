@@ -39,9 +39,9 @@ using System.Collections;
 	// Use this for initialization
 	public override void Start () {
 		base.Start();
-		MaxHP = 150;
+		MaxHP = 70;
 		Points = 0;
-		HeroHP = 100;
+		HeroHP = 70;
 		
 		GameObject.Instantiate(healthBar, new Vector3(0f,3f,0f), transform.rotation);
 	
