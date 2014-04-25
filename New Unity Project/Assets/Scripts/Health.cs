@@ -14,6 +14,7 @@ public class Health : MonoBehaviour {
 	void Start () {
 	
 		DontDestroyOnLoad (transform.gameObject);
+		this.gameObject.renderer.material.color = new Color(255f, 0f, 0f);
 
 		//GameObject healthBar = (GameObject)Instantiate(Resources.Load("nontexturedAPPLE"));
 		/*hpBar = GameObject.Find ("wallSubstitute(Clone)");
