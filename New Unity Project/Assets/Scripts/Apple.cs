@@ -21,7 +21,7 @@ public class Apple : Life {
 	}
 	
 	public void AppleScriptStart () {
-		Speed = 0.8f;
+		Speed = 1.3f;
 	}
 	
 	public void AppleScriptUpdate () {

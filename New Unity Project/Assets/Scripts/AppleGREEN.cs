@@ -13,7 +13,7 @@ class AppleGREEN : Apple {
 	public override void Start () {
 		base.Start();
 		AppleScriptStart ();
-		ATK = 5;
+		ATK = 10;
 		HP = 20;
 	}
 	

@@ -13,8 +13,9 @@ class AppleYELLOW : Apple {
 	public override void Start () {
 		base.Start();
 		AppleScriptStart ();
-		ATK = 10;
+		ATK = 15;
 		HP = 35;
+		Speed = Speed * 1.7f;
 	}
 	
 	// Update is called once per frame
