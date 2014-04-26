@@ -4,13 +4,12 @@
 SceneSettings:
   m_ObjectHideFlags: 0
   m_PVSData: 
-  m_QueryMode: 1
   m_PVSObjectsArray: []
   m_PVSPortalsArray: []
   m_OcclusionBakeSettings:
-    viewCellSize: 1
-    bakeMode: 2
-    memoryUsage: 10485760
+    smallestOccluder: 5
+    smallestHole: .25
+    backfaceThreshold: 100
 --- !u!104 &2
 RenderSettings:
   m_Fog: 0
@@ -23,6 +22,7 @@ RenderSettings:
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: .5
   m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 0}
   m_ObjectHideFlags: 0
@@ -156,7 +156,8 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400006, guid: 274dc357f223c8040a69d552a20848f7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 274dc357f223c8040a69d552a20848f7, type: 2}
   m_RootGameObject: {fileID: 2120470986}
   m_IsPrefabParent: 0
@@ -230,6 +231,7 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
+  m_OcclusionCulling: 1
 --- !u!4 &1072661104
 Transform:
   m_ObjectHideFlags: 0
@@ -366,6 +368,8 @@ GameObject:
   - 114: {fileID: 2120470989}
   - 114: {fileID: 2120470988}
   - 114: {fileID: 2120470991}
+  - 114: {fileID: 2120470992}
+  - 114: {fileID: 2120470993}
   m_Layer: 0
   m_Name: TheSpawnerLVL4
   m_TagString: Untagged
@@ -410,8 +414,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DaBushDOWN: {fileID: 100002, guid: 32bb854c8702cbb4a93b6b9b92c1c919, type: 2}
-  DaBushUP: {fileID: 100000, guid: 8d3b730a919545043bf0dd1eb938ab25, type: 2}
-  TheLarch: {fileID: 100000, guid: c78c04e7d7e05d34b81305a8eb8044c2, type: 2}
 --- !u!114 &2120470990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -440,3 +442,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AppleSeed: {fileID: 11325161}
+--- !u!114 &2120470992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2120470986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74b5f5737ab5e463ab84d7a37eac9024, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Heart: {fileID: 100026, guid: c8dc47716b3188a4a8d98cadd7467c2e, type: 2}
+--- !u!114 &2120470993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2120470986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ee749e5ea2604d5185b43f6da843348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  appleseed: {fileID: 100020, guid: 0270e99bad32b8c4697a3aceb797f3e7, type: 2}
