@@ -118,7 +118,7 @@ using System.Collections;
 			HeroHP -= AppleRed.GetATK ();
 			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHeroHP());
 		}
-		if(other.gameObject.name == "Branch(Clone)"){
+		if(other.gameObject.name == "TestRoot"){
 			HeroHP -= TreeRoot.GetATK ();
 			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHeroHP());
 		}
