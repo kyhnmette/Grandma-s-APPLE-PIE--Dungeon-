@@ -9,8 +9,6 @@ public class GUIScript : MonoBehaviour {
 	
 	public GUITexture IntroImage;
 	public GUITexture HowToImage;
-	public GUITexture Win;
-	public GUITexture Lose;
 	
 	public static bool GetGameOn () {
 		return GameOn;
@@ -21,8 +19,9 @@ public class GUIScript : MonoBehaviour {
 		IntroMenuOn = true; // The intro menu comes first so it will be set to true right away
 		HowToMenuOn = false;
 		GameOn = false;
-		Win.enabled = false;
-		Lose.enabled = false;
+		
+		IntroImage.pixelInset = new Rect (-Screen.width/2, -Screen.height/2, 1014, 705);
+		HowToImage.pixelInset = new Rect (-Screen.width/2, -Screen.height/2, 1014, 705);
 	}
 	
 	// Update is called once per frame
@@ -63,8 +62,5 @@ public class GUIScript : MonoBehaviour {
 			IntroImage.enabled = false;
 			HowToImage.enabled = false;
 		}
-		
-		if (Lars.GetHeroHP() <= 0)
-			Lose.enabled = true;
 	}
 }

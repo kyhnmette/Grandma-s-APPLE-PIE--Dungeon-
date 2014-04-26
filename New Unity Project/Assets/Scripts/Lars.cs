@@ -88,18 +88,19 @@ using System.Collections;
 				
 			}
 		
-			if (HeroHP > MaxHP)
-			{
+			if (HeroHP > MaxHP){
 				HeroHP = MaxHP;
 			}
-			if (HeroHP <= 0)
-			{
+			
+			if (HeroHP <= 0){
 				Destroy (gameObject);
+				//GUIScript.GameLost();
 			}
 		}
 	}
 	
 	void OnCollisionEnter(Collision other){
+		// All the collisions there shall happen when Lars picks up an item or gets hit by an enemy
 		if(other.gameObject.name == "HeartHP(Clone)"){
 			HeroHP += 5;
 		}
@@ -122,7 +123,7 @@ using System.Collections;
 			HeroHP -= TreeRoot.GetATK ();
 			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHeroHP());
 		}
-		if(other.gameObject.name == "Tree(Clone)"){
+		if(other.gameObject.name == "TreeBOSS(Clone)"){
 			HeroHP = 0;
 		}
 	}

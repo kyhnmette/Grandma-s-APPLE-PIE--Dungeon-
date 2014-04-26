@@ -9,8 +9,11 @@ GameObject:
   m_Component:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
-  - 114: {fileID: 11400002}
   - 114: {fileID: 11400004}
+<<<<<<< HEAD
+=======
+  - 114: {fileID: 11400002}
+>>>>>>> FETCH_HEAD
   - 114: {fileID: 11400006}
   m_Layer: 0
   m_Name: TheSpawner
@@ -26,7 +29,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.8820438, y: 2.48237276, z: 1.98270512}
+  m_LocalPosition: {x: 1.11901665, y: -.113200307, z: -.00410079956}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -56,10 +59,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f11c4c75d35eef3478d033d4f452faf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IntroImage: {fileID: 13100000, guid: 3255ef03e673d224eb4457ce5da38aa4, type: 2}
-  HowToImage: {fileID: 13100000, guid: d90e37dd6a1b2e244b76693f88c79be5, type: 2}
-  Win: {fileID: 0}
-  Lose: {fileID: 0}
+  IntroImage: {fileID: 0}
+  HowToImage: {fileID: 0}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -83,10 +84,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
   m_Script: {fileID: 11500000, guid: 9479fdbd5054c4234b8bf1d5b0c03cce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Heart: {fileID: 0}
+=======
+  m_Script: {fileID: 11500000, guid: a3797df6f3e118e45b8e02263cf07790, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Win: {fileID: 0}
+  Lose: {fileID: 0}
+  AppleSeed: {fileID: 0}
+>>>>>>> FETCH_HEAD
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
