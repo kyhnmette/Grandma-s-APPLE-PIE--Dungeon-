@@ -19,12 +19,19 @@ public class Apple : Life {
 	void Update () {
 		// Everything in here will not update on each apple! Look at the AppleScriptUpdate function below!	
 	}
-	
+
+
+	//This is the default Start() script - !!!
 	public void AppleScriptStart () {
 		Speed = 1.3f;
 	}
-	
+	//This is the default Update() script - !!!
 	public void AppleScriptUpdate () {
+
+		//Look at lars
+		this.transform.LookAt(GameObject.Find("Lars").transform);
+
+
 		if (GUIScript.GetGameOn() == true){
 			DistanceX = Mathf.Abs (transform.position.x) - Mathf.Abs(Lars.GetLarsX());	// Calculates the distance on the x-axies of Lars and the apple by using the abselute value
 			DistanceZ = Mathf.Abs (transform.position.z) - Mathf.Abs(Lars.GetLarsZ());	// Calculates the distance on the z-axies of Lars and the apple by using the abselute value
@@ -64,4 +71,6 @@ public class Apple : Life {
 			}
 		}
 	}
+
+
 }
