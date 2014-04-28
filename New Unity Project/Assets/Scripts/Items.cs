@@ -23,18 +23,3 @@ public class Items : MonoBehaviour {
 		}
 	}
 }
-
-
-/*Lars pre-code:
-void OnCollisionEnter(Collision other){
-	if(other.gameObject.name == "Hearts" && HP <= 100){ // Taken that his max HP is 100
-		HP =+ 1; // or how much we want the health to increase
-	}
-	if(other.gameObject.name == "AppleSeeds"){
-		NumOfSeeds++;
-	}
-	if(other.gameObject.name == "PowerUp"){
-		ATK =* 2;
-		PowerUpIsActive = true; // should then start a timer of how long the power up shall be active
-	}
-}*/
