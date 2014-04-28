@@ -30,6 +30,4 @@ public class Life : MonoBehaviour {
 	public void GetHit (int DmgTaken) {
 		HP -= DmgTaken;
 	}
-	public virtual void TestFunktion(){
-	}
 }
