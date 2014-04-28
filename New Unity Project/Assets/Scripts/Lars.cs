@@ -57,43 +57,30 @@ using System.Collections;
 			LarsY = transform.position.y;	// Gets Larses current Y coordinates
 			LarsZ = transform.position.z;	// Gets Larses current Z coordinate
 			
-			if (Input.GetKey(KeyCode.A)){
-				transform.position += new Vector3(-3.0f, 0, 0)* Time.deltaTime;	//x position, movin left
+			// The following code will make our character move with the a,w,d,s or arrow keys and make him face in that direction
+			if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)){
+				transform.position += new Vector3(-3.0f, 0, 0)* Time.deltaTime;
 				transform.eulerAngles = new Vector3(0, 270, 0);
 			}
-			if (Input.GetKey(KeyCode.D)){
-				transform.position += new Vector3(3.0f, 0, 0)* Time.deltaTime; //x position moving right
+			if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)){
+				transform.position += new Vector3(3.0f, 0, 0)* Time.deltaTime;
 				transform.eulerAngles = new Vector3(0, 90, 0);
 			}
-			if (Input.GetKey(KeyCode.W)){
-				transform.position += new Vector3(0, 0, 3f)* Time.deltaTime; //z position moving forwards
+			if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)){
+				transform.position += new Vector3(0, 0, 3f)* Time.deltaTime;
 				transform.eulerAngles = new Vector3(0, 0, 0);
 			}
-			if (Input.GetKey(KeyCode.S)){
-				transform.position += new Vector3(0, 0, -3f)* Time.deltaTime; //z position movin back
+			if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)){
+				transform.position += new Vector3(0, 0, -3f)* Time.deltaTime;
 				transform.eulerAngles = new Vector3(0, 180, 0);
 			}
-				if (Input.GetKey(KeyCode.LeftArrow)){
-				transform.position += new Vector3(-3.0f, 0, 0)* Time.deltaTime;	//x position, movin left
-				transform.eulerAngles = new Vector3(0, 270, 0);
-			}
-			if (Input.GetKey(KeyCode.RightArrow)){
-				transform.position += new Vector3(3.0f, 0, 0)* Time.deltaTime; //x position moving right
-				transform.eulerAngles = new Vector3(0, 90, 0);
-			}
-			if (Input.GetKey(KeyCode.UpArrow)){
-				transform.position += new Vector3(0, 0, 3f)* Time.deltaTime; //z position moving forwards
-				transform.eulerAngles = new Vector3(0, 0, 0);
-			}
-			if (Input.GetKey(KeyCode.DownArrow)){
-				transform.position += new Vector3(0, 0, -3f)* Time.deltaTime; //z position movin back
-				transform.eulerAngles = new Vector3(0, 180, 0);
-			}
+			// This statement will make Lars shot a ball of fire
 			if (Input.GetKeyDown (KeyCode.Space) && BallIsReady == true){
 				Instantiate (Spawn, transform.position + transform.forward, Quaternion.identity);
 				BallIsReady = false;
 			}
-		
+			
+			
 			if (BallIsReady == false){
 				BallCoolDown--; //* Time.deltatime???
 			
