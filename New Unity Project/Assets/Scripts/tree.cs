@@ -6,7 +6,6 @@ public class tree : Life {
 	private float valueX;
 	private float valueZ;
 	private float LarsOldX;
-	private float LarsOldY;
 	private float LarsOldZ;
 	private short ATKtimer;
 	private bool ATKready;
@@ -42,31 +41,31 @@ public class tree : Life {
 			if (ATKready == true){
 				if (valueX < 2.0f && valueZ < 2.0f) {
 					LarsOldX = Lars.GetLarsX(); // saves lars's current position 
-					LarsOldZ = Lars.GetLarsZ(); //
+					LarsOldZ = Lars.GetLarsZ();
 					Invoke ("damageFunction", 2); // will activate the damage function after 2 sec.
 					ATKready = false;
 				} 
 				else if (valueX < 4.0f && valueZ < 4.0f) {
 					LarsOldX = Lars.GetLarsX(); // saves lars's current position 
-					LarsOldZ = Lars.GetLarsZ(); //
+					LarsOldZ = Lars.GetLarsZ();
 					Invoke ("damageFunction", 3); // will activate the damage function after 3 sec.
 					ATKready = false;
 				} 
 				else if (valueX < 6.0f && valueZ < 6.0f) {
 					LarsOldX = Lars.GetLarsX(); // saves lars's current position 
-					LarsOldZ = Lars.GetLarsZ(); //
+					LarsOldZ = Lars.GetLarsZ();
 					Invoke ("damageFunction", 4); // will activate the damage function after 4 sec.
 					ATKready = false;
 				} 
 				else if (valueX < 8.0f && valueZ < 8.0f) {
 					LarsOldX = Lars.GetLarsX(); // saves lars's current position 
-					LarsOldZ = Lars.GetLarsZ(); //
+					LarsOldZ = Lars.GetLarsZ();
 					Invoke ("damageFunction", 5); // will activate the damage function after 5 sec.
 					ATKready = false;
 				} 
 				else if (valueX < 10.0f && valueZ < 10.0f) {
 					LarsOldX = Lars.GetLarsX(); // saves lars's current position 
-					LarsOldZ = Lars.GetLarsZ(); //
+					LarsOldZ = Lars.GetLarsZ();
 					Invoke ("damageFunction", 6); // will activate the damage function after 6 sec.
 					ATKready = false;
 				}
@@ -75,7 +74,8 @@ public class tree : Life {
 			if (BossHP <= 0){ // if the tree boss has no mor HP he will be destoyed 
 				Destroy(gameObject);
 			}
-		
+			
+			// This code will set a small timer on 2 seconds or the attack would be very buggy
 			if (ATKready == false){
 				ATKtimer++;
 				if (ATKtimer == 12){
@@ -83,12 +83,11 @@ public class tree : Life {
 					ATKtimer = 0;
 				}
 			}
-			
-			
 		}
 	} 
 
-	public void damageFunction () { 
+	public void damageFunction () {
+		// This will set where the root will attack and that it will be attacking
 		if (TreeRoot.GetIsAttacking() == false){
 			TreeRoot.SetPosX(LarsOldX); 
 			TreeRoot.SetPosZ(LarsOldZ);

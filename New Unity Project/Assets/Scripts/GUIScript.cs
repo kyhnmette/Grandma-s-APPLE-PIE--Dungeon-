@@ -20,6 +20,7 @@ public class GUIScript : MonoBehaviour {
 		HowToMenuOn = false;
 		GameOn = false;
 		
+		// Sets the position and size for the GUI Textures
 		IntroImage.pixelInset = new Rect (-Screen.width/2, -Screen.height/2, 1014, 705);
 		HowToImage.pixelInset = new Rect (-Screen.width/2, -Screen.height/2, 1014, 705);
 	}
@@ -27,7 +28,7 @@ public class GUIScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Return)){
-			// This section handles the intro and How to play scenes, click SPACE to continue
+			// This section handles the intro and How to play scenes, click ENTER (return) to continue
 			if (IntroMenuOn == true){
 				IntroMenuOn = false;
 				HowToMenuOn = true;

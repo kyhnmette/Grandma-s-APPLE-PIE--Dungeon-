@@ -4,7 +4,6 @@ using System.Collections;
 public class Items : MonoBehaviour {
 	
 	private float rotSpeed = 150.0f;
-	public Transform pickUp;
 
 	// Use this for initialization
 	void Start () {
@@ -17,8 +16,7 @@ public class Items : MonoBehaviour {
 	}
 	
 	void OnCollisionEnter(Collision other){
-		if(other.gameObject.name == "Lars"){ // if lars is touching a item he will be able to pick it up
-			Instantiate(pickUp, transform.position, Quaternion.identity);
+		if(other.gameObject.name == "Lars"){ // if lars is touching a item he will be able to pick it up and the item will be destroyed
 			Destroy(gameObject);
 		}
 	}

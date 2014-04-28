@@ -13,7 +13,6 @@ public class Life : MonoBehaviour {
 	protected static int BossHP;
 	protected static int ATK;
 	protected float Speed;
-	public GameObject ScriptOWNER;
 	
 	public static int GetHP() {
 		return HP;
@@ -28,6 +27,6 @@ public class Life : MonoBehaviour {
 	}
 	
 	public void GetHit (int DmgTaken) {
-		HP -= DmgTaken;
+		HP -= DmgTaken;	// When someone is hit will they lose HP, that was the idea behind this function if HP would work correctly
 	}
 }

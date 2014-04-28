@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67657f3d9c558b544beea1da5b77b9ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TreeSpawn: {fileID: 100000, guid: aa0082614feab664c886a9306d445c51, type: 2}
+  m_EditorClassIdentifier: 
 --- !u!114 &362245795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,6 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DaBushDOWN: {fileID: 100002, guid: 32bb854c8702cbb4a93b6b9b92c1c919, type: 2}
+  TreeSpawn: {fileID: 100000, guid: aa0082614feab664c886a9306d445c51, type: 2}
   TheLarch: {fileID: 100024, guid: c78c04e7d7e05d34b81305a8eb8044c2, type: 2}
   appleseed: {fileID: 100020, guid: 0270e99bad32b8c4697a3aceb797f3e7, type: 2}
   Heart: {fileID: 100028, guid: c8dc47716b3188a4a8d98cadd7467c2e, type: 2}
@@ -365,6 +366,10 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400002, guid: 274dc357f223c8040a69d552a20848f7, type: 2}
+      propertyPath: TreeSpawn
+      value: 
+      objectReference: {fileID: 100000, guid: aa0082614feab664c886a9306d445c51, type: 2}
     m_RemovedComponents:
     - {fileID: 11400006, guid: 274dc357f223c8040a69d552a20848f7, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 274dc357f223c8040a69d552a20848f7, type: 2}

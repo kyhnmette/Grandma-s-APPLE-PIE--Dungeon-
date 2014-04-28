@@ -5,11 +5,9 @@ public class BallOfFire : MonoBehaviour {
 	
 	private float BallSpeed;
 	private static short BallDmg;
-	private int Frames = 0;
+	private int Frames;
 
 	private GameObject lars;
-		
-	public Transform Sparkle;
 	
 	public static short GetBallDmg () {
 		return BallDmg;
@@ -20,6 +18,7 @@ public class BallOfFire : MonoBehaviour {
 		lars = GameObject.Find ("Lars");
 		BallSpeed = 300.0f;
 		BallDmg = 20;
+		Frames = 0;
 		rigidbody.velocity = lars.transform.forward * BallSpeed * Time.deltaTime;	// The ball spawns with a velocity in front of Lars and goes forward of his position
 	}
 	
@@ -34,7 +33,6 @@ public class BallOfFire : MonoBehaviour {
 	}
 	
 	void OnCollisionEnter (Collision other) {
-		//Instantiate (Sparkle, transform.position, Quaternion.identity);
 		Destroy (gameObject);	// When the ball hits something then shall it be destroyed
 	}
 }

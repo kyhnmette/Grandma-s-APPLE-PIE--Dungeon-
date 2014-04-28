@@ -11,17 +11,12 @@ using System.Collections;
 	private int MaxHP;
 	
 	private static float LarsX;
-	private static float LarsY;
 	private static float LarsZ;
 	
 	public GameObject Spawn;
 	
 	public static float GetLarsX () {
 		return LarsX;
-	}
-	
-	public static float GetLarsY () {
-		return LarsY;
 	}
 	
 	public static float GetLarsZ () {
@@ -54,7 +49,6 @@ using System.Collections;
 		
 		if (GUIScript.GetGameOn() == true){
 			LarsX = transform.position.x;	// Gets Larses current X coordinates
-			LarsY = transform.position.y;	// Gets Larses current Y coordinates
 			LarsZ = transform.position.z;	// Gets Larses current Z coordinate
 			
 			// The following code will make our character move with the a,w,d,s or arrow keys and make him face in that direction
@@ -80,24 +74,24 @@ using System.Collections;
 				BallIsReady = false;
 			}
 			
-			
+			// This following code will make a timer for the cooldown for when Lars can fire another ball of fire (so he can't spam them)
 			if (BallIsReady == false){
-				BallCoolDown--; //* Time.deltatime???
-			
+				BallCoolDown--;	// When a ball of fire have been fired off will this variable cound down each frame until it reaches 0
 				if (BallCoolDown == 0){
-					BallIsReady = true;
-					BallCoolDown = 48;
+					BallIsReady = true;	// A new ball can then be fired again
+					BallCoolDown = 48;	// And the timer resets to 2 seconds
 				}
 				
 			}
-		
+			
+			// Lars shall not be able to stack too much HP, this will set the cap so he can't reach over his maximum HP
 			if (HeroHP > MaxHP){
 				HeroHP = MaxHP;
 			}
 			
+			// If Lars's HP becomes 0 or below then will he be destroyed
 			if (HeroHP <= 0){
 				Destroy (gameObject);
-				//GUIScript.GameLost();
 			}
 		}
 	}
@@ -112,19 +106,15 @@ using System.Collections;
 		}
 		if(other.gameObject.name == "GreenAPPLE(Clone)"){
 			HeroHP -= AppleGREEN.GetATK ();
-			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHeroHP());
 		}
 		if(other.gameObject.name == "YellowAPPLE(Clone)"){
 			HeroHP -= AppleYELLOW.GetATK ();
-			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHeroHP());
 		}
 		if(other.gameObject.name == "RedAPPLE(Clone)"){
 			HeroHP -= AppleRed.GetATK ();
-			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHeroHP());
 		}
 		if(other.gameObject.name == "TestRoot(Clone)"){
 			HeroHP -= tree.GetATK ();
-			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHeroHP());
 		}
 		if(other.gameObject.name == "TreeBOSS(Clone)"){
 			HeroHP = 0;
