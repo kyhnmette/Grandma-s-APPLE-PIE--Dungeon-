@@ -25,7 +25,7 @@ public class GUIinterface : MonoBehaviour {
 		if (GUIScript.GetGameOn() == true){
 			AppleSeed.enabled = true;
 		}
-		
+
 		if (Lars.GetHeroHP() <= 0)
 			Lose.enabled = true;
 		else if (tree.GetBossHP() <= 0)
