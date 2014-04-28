@@ -73,6 +73,22 @@ using System.Collections;
 				transform.position += new Vector3(0, 0, -3f)* Time.deltaTime; //z position movin back
 				transform.eulerAngles = new Vector3(0, 180, 0);
 			}
+				if (Input.GetKey(KeyCode.LeftArrow)){
+				transform.position += new Vector3(-3.0f, 0, 0)* Time.deltaTime;	//x position, movin left
+				transform.eulerAngles = new Vector3(0, 270, 0);
+			}
+			if (Input.GetKey(KeyCode.RightArrow)){
+				transform.position += new Vector3(3.0f, 0, 0)* Time.deltaTime; //x position moving right
+				transform.eulerAngles = new Vector3(0, 90, 0);
+			}
+			if (Input.GetKey(KeyCode.UpArrow)){
+				transform.position += new Vector3(0, 0, 3f)* Time.deltaTime; //z position moving forwards
+				transform.eulerAngles = new Vector3(0, 0, 0);
+			}
+			if (Input.GetKey(KeyCode.DownArrow)){
+				transform.position += new Vector3(0, 0, -3f)* Time.deltaTime; //z position movin back
+				transform.eulerAngles = new Vector3(0, 180, 0);
+			}
 			if (Input.GetKeyDown (KeyCode.Space) && BallIsReady == true){
 				Instantiate (Spawn, transform.position + transform.forward, Quaternion.identity);
 				BallIsReady = false;
