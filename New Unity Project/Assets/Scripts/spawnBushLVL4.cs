@@ -6,6 +6,18 @@ public class spawnBushLVL4 : MonoBehaviour {
 	public GameObject DaBushDOWN;
 	//public GameObject DaBushUP;
 	//public GameObject TheLarch;
+	public GameObject appleseed;
+	public GameObject Heart;
+	
+	//-------------------Appleseeds LVL BOSS-------------------
+	
+	private float[] SEEDposX = {8.0f, 11.0f, 3.0f, 7.0f, 17.0f};
+	private float[] SEEDposZ = {12.0f, 5.0f, 7.0f, 3.0f, 7.0f};
+	
+	//--
+	
+	private float[] HeartposX = {18.0f, 18.0f, 3.0f, 3.0f, 18.0f};
+	private float[] HeartposZ = {18.0f, 2.0f, 18.0f, 9.0f, 9.0f};
 	
 	//-------------------------LVLBOSS-------------------------
 	
@@ -31,6 +43,12 @@ public class spawnBushLVL4 : MonoBehaviour {
 			
 	//		TheLarch.gameObject.transform.position = new Vector3(1.5f, 2f, 1.5f);
 	//	}
+		for (int i = 0; i < SEEDposX.Length; i++) {
+			GameObject.Instantiate(appleseed, new Vector3(SEEDposX[i],1.0f,SEEDposZ[i]), transform.rotation);
+		}
+		for (int i = 0; i < HeartposX.Length; i++) {
+			GameObject.Instantiate(Heart, new Vector3(HeartposX[i],1.0f,HeartposZ[i]), transform.rotation);	
+		}
 	
 	}
 	

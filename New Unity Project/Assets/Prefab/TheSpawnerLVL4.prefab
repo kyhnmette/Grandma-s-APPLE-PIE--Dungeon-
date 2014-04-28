@@ -58,6 +58,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DaBushDOWN: {fileID: 100002, guid: 32bb854c8702cbb4a93b6b9b92c1c919, type: 2}
+  appleseed: {fileID: 100020, guid: 0270e99bad32b8c4697a3aceb797f3e7, type: 2}
+  Heart: {fileID: 100028, guid: c8dc47716b3188a4a8d98cadd7467c2e, type: 2}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -81,6 +83,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e1c132765191433da9344be265a30b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: 
   Heart: {fileID: 100028, guid: c8dc47716b3188a4a8d98cadd7467c2e, type: 2}
 --- !u!114 &11400008
 MonoBehaviour:
@@ -92,6 +95,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ee749e5ea2604d5185b43f6da843348, type: 3}
   m_Name: 
+  m_EditorClassIdentifier: 
   m_EditorClassIdentifier: 
   appleseed: {fileID: 100020, guid: 0270e99bad32b8c4697a3aceb797f3e7, type: 2}
 --- !u!1001 &100100000

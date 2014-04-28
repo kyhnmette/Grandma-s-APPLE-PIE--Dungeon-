@@ -7,6 +7,18 @@ public class spawnBush : MonoBehaviour {
 	public GameObject DaBushUP;
 	public GameObject GreenApple;
 	public GameObject TheLarch;
+	public GameObject appleseed;
+	public GameObject Heart;
+	
+	//-------------------------Appleseeds LVL Green -----------
+
+	private float[] SEEDposX = {18.0f, 16.0f, 3.0f, 6.0f, 15.0f};
+	private float[] SEEDposZ = {18.0f, 2.0f, 16.0f, 12.0f, 10.0f};
+	
+	//-------------------------Hearts for LVL GREEN------------
+	
+	private float[] HeartposX = {13.0f};
+	private float[] HeartposZ = {16.0f};
 	
 	//--------------------------LVLGreen-----------------------
 	
@@ -30,6 +42,14 @@ public class spawnBush : MonoBehaviour {
 			GameObject.Instantiate(DaBushUP, new Vector3(UPposX[i],1.0f,UPposZ[i]), transform.rotation);
 		}
 		GameObject.Instantiate(GreenApple, new Vector3(13.5f,3f,13.5f), transform.rotation);
+		
+		for (int i = 0; i < SEEDposX.Length; i++) {
+			GameObject.Instantiate(appleseed, new Vector3(SEEDposX[i],1.0f,SEEDposZ[i]), transform.rotation);
+		}
+		
+		for (int i = 0; i < HeartposX.Length; i++) {
+			GameObject.Instantiate(Heart, new Vector3(HeartposX[i],1.0f,HeartposZ[i]), transform.rotation);
+		}
 		
 		GameObject LarsSpawn = (GameObject)Instantiate(TheLarch, new Vector3(1.5f,2f,1.5f), transform.rotation);
 		LarsSpawn.name = "Lars";
