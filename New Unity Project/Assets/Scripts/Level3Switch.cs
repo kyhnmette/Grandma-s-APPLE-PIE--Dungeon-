@@ -20,7 +20,7 @@ public class Level3Switch : MonoBehaviour {
 	void OnCollisionEnter(Collision other){
 		if (other.gameObject.name == "Lars") {
 			Destroy (gameObject);
-			Application.LoadLevel ("Level4");
+			Application.LoadLevel ("Level_4");
 		}
 	}
 }
