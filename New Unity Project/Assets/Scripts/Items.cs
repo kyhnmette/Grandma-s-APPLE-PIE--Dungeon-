@@ -13,11 +13,11 @@ public class Items : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Rotate(new Vector3(0, rotSpeed, 0) * Time.deltaTime);
+		transform.Rotate(new Vector3(0, rotSpeed, 0) * Time.deltaTime); // making the items rotate 
 	}
 	
 	void OnCollisionEnter(Collision other){
-		if(other.gameObject.name == "Lars"){
+		if(other.gameObject.name == "Lars"){ // if lars is touching a item he will be able to pick it up
 			Instantiate(pickUp, transform.position, Quaternion.identity);
 			Destroy(gameObject);
 		}

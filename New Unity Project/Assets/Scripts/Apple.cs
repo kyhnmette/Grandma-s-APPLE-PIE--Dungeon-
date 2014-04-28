@@ -29,7 +29,7 @@ public class Apple : Life {
 	public void AppleScriptUpdate () {
 
 		//Look at lars
-		this.transform.LookAt(GameObject.Find("Lars").transform);
+		this.transform.LookAt(GameObject.Find("Lars").transform); // the apples will always look at lars 
 
 
 		if (GUIScript.GetGameOn() == true){
