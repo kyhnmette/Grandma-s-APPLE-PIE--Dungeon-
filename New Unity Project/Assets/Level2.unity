@@ -219,7 +219,6 @@ GameObject:
   - 20: {fileID: 542590406}
   - 92: {fileID: 542590405}
   - 124: {fileID: 542590404}
-  - 81: {fileID: 542590403}
   - 114: {fileID: 542590408}
   m_Layer: 0
   m_Name: Main Camera
@@ -228,13 +227,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &542590403
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 542590402}
-  m_Enabled: 1
 --- !u!124 &542590404
 Behaviour:
   m_ObjectHideFlags: 0
