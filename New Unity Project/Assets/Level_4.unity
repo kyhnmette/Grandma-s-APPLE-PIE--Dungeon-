@@ -4,12 +4,13 @@
 SceneSettings:
   m_ObjectHideFlags: 0
   m_PVSData: 
+  m_QueryMode: 1
   m_PVSObjectsArray: []
   m_PVSPortalsArray: []
   m_OcclusionBakeSettings:
-    smallestOccluder: 5
-    smallestHole: .25
-    backfaceThreshold: 100
+    viewCellSize: 1
+    bakeMode: 2
+    memoryUsage: 10485760
 --- !u!104 &2
 RenderSettings:
   m_Fog: 0
@@ -22,7 +23,6 @@ RenderSettings:
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: .5
   m_FlareStrength: 1
-  m_FlareFadeSpeed: 3
   m_HaloTexture: {fileID: 0}
   m_SpotCookie: {fileID: 0}
   m_ObjectHideFlags: 0
@@ -85,7 +85,6 @@ GameObject:
   - 114: {fileID: 362245796}
   - 114: {fileID: 362245795}
   - 114: {fileID: 362245794}
-  - 114: {fileID: 362245792}
   - 114: {fileID: 362245793}
   m_Layer: 0
   m_Name: TheSpawnerLVL4
@@ -94,19 +93,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &362245792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400008, guid: 274dc357f223c8040a69d552a20848f7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1055984874}
-  m_GameObject: {fileID: 362245791}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ee749e5ea2604d5185b43f6da843348, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  appleseed: {fileID: 100020, guid: 0270e99bad32b8c4697a3aceb797f3e7, type: 2}
 --- !u!114 &362245793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,7 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74b5f5737ab5e463ab84d7a37eac9024, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Heart: {fileID: 100028, guid: c8dc47716b3188a4a8d98cadd7467c2e, type: 2}
+  m_EditorClassIdentifier: 
 --- !u!114 &362245794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,6 +131,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DaBushDOWN: {fileID: 100002, guid: 32bb854c8702cbb4a93b6b9b92c1c919, type: 2}
+  appleseed: {fileID: 100020, guid: 0270e99bad32b8c4697a3aceb797f3e7, type: 2}
+  Heart: {fileID: 100028, guid: c8dc47716b3188a4a8d98cadd7467c2e, type: 2}
 --- !u!114 &362245796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,7 +425,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1414722195}
-  m_LocalRotation: {x: .408217937, y: -.234569728, z: .109381676, w: .875426054}
+  m_LocalRotation: {x: .408217967, y: -.234569743, z: .109381683, w: .875426114}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -514,7 +502,6 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_HDR: 0
-  m_OcclusionCulling: 1
 --- !u!4 &1584061764
 Transform:
   m_ObjectHideFlags: 0

@@ -102,7 +102,7 @@ using System.Collections;
 	void OnCollisionEnter(Collision other){
 		// All the collisions there shall happen when Lars picks up an item or gets hit by an enemy
 		if(other.gameObject.name == "HeartHP(Clone)"){
-			HeroHP += 5;
+			HeroHP += 10;
 		}
 		if(other.gameObject.name == "appleseed(Clone)"){
 			Points++;
@@ -119,8 +119,8 @@ using System.Collections;
 			HeroHP -= AppleRed.GetATK ();
 			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHeroHP());
 		}
-		if(other.gameObject.name == "TestRoot"){
-			HeroHP -= TreeRoot.GetATK ();
+		if(other.gameObject.name == "TestRoot(Clone)"){
+			HeroHP -= tree.GetATK ();
 			print (AppleGREEN.GetHP() + " " + AppleRed.GetHP() + " " + AppleYELLOW.GetHP() + " " + Lars.GetHeroHP());
 		}
 		if(other.gameObject.name == "TreeBOSS(Clone)"){

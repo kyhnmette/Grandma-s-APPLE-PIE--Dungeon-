@@ -23,7 +23,7 @@ public class Apple : Life {
 
 	//This is the default Start() script - !!!
 	public void AppleScriptStart () {
-		Speed = 1.3f;
+		//Speed = 1.3f;
 	}
 	//This is the default Update() script - !!!
 	public void AppleScriptUpdate () {

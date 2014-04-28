@@ -20,6 +20,9 @@ public class tree : Life {
 	public static void SetBossHP (int x) {
 		BossHP = x;
 	}
+	public static int GetATK(){
+		return ATK; 
+	}
 
 	// Use this for initialization
 	void Start () {

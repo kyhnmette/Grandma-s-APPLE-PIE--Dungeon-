@@ -5,7 +5,7 @@ public class spawnBushLVL4 : MonoBehaviour {
 	
 	public GameObject DaBushDOWN;
 	//public GameObject DaBushUP;
-	//public GameObject TheLarch;
+	public GameObject TheLarch;
 	public GameObject appleseed;
 	public GameObject Heart;
 	
@@ -40,15 +40,16 @@ public class spawnBushLVL4 : MonoBehaviour {
 		
 	//	for (int i = 0; i < UPposX.Length; i++) {
 	//		GameObject.Instantiate(DaBushUP, new Vector3(UPposX[i],1.0f,UPposZ[i]), transform.rotation);
-			
-	//		TheLarch.gameObject.transform.position = new Vector3(1.5f, 2f, 1.5f);
-	//	}
+	//		}
+		
 		for (int i = 0; i < SEEDposX.Length; i++) {
 			GameObject.Instantiate(appleseed, new Vector3(SEEDposX[i],1.0f,SEEDposZ[i]), transform.rotation);
 		}
 		for (int i = 0; i < HeartposX.Length; i++) {
 			GameObject.Instantiate(Heart, new Vector3(HeartposX[i],1.0f,HeartposZ[i]), transform.rotation);	
 		}
+		
+		TheLarch.gameObject.transform.position = new Vector3(1.5f, 2f, 1.5f);
 	
 	}
 	
