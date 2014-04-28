@@ -218,7 +218,6 @@ GameObject:
   - 4: {fileID: 650761235}
   - 114: {fileID: 650761234}
   - 114: {fileID: 650761237}
-  - 114: {fileID: 650761240}
   - 114: {fileID: 650761236}
   - 114: {fileID: 650761238}
   - 114: {fileID: 650761239}
@@ -313,20 +312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9479fdbd5054c4234b8bf1d5b0c03cce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Heart: {fileID: 100026, guid: c8dc47716b3188a4a8d98cadd7467c2e, type: 2}
---- !u!114 &650761240
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400006, guid: f5cad009f2712454e877951c5f782c37,
-    type: 2}
-  m_PrefabInternal: {fileID: 962793841}
-  m_GameObject: {fileID: 650761233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9479fdbd5054c4234b8bf1d5b0c03cce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Heart: {fileID: 0}
+  Heart: {fileID: 100028, guid: c8dc47716b3188a4a8d98cadd7467c2e, type: 2}
 --- !u!114 &650761241
 MonoBehaviour:
   m_ObjectHideFlags: 0
