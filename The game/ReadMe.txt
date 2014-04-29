@@ -1,0 +1,1 @@
+Seriously recommended ressolution: 1024 x 768
