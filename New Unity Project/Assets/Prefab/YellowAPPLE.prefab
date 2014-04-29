@@ -2991,6 +2991,7 @@ GameObject:
   - 33: {fileID: 3300000}
   - 136: {fileID: 13600000}
   - 23: {fileID: 2300000}
+  - 111: {fileID: 11100002}
   m_Layer: 0
   m_Name: Right
   m_TagString: Untagged
@@ -3009,6 +3010,7 @@ GameObject:
   - 33: {fileID: 3300002}
   - 136: {fileID: 13600002}
   - 23: {fileID: 2300002}
+  - 111: {fileID: 11100000}
   m_Layer: 0
   m_Name: Left
   m_TagString: Untagged
@@ -5726,6 +5728,42 @@ Animator:
   m_CullingMode: 1
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
+--- !u!111 &11100000
+Animation:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100398}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: e4def88f6d2a7bf40b2c290012d08608, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: e4def88f6d2a7bf40b2c290012d08608, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+  m_UserAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+--- !u!111 &11100002
+Animation:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100396}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: fbb4b7c428669e340ab1a7988748d3df, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: fbb4b7c428669e340ab1a7988748d3df, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+  m_UserAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5737,7 +5775,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c95efc8bc53cf644b03571ae1f5e9c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScriptOWNER: {fileID: 100404}
   Larch: {fileID: 400024, guid: c78c04e7d7e05d34b81305a8eb8044c2, type: 2}
   nextLevel2: {fileID: 100000, guid: d9e9c59d3ed2249c1b83367d08114c7c, type: 2}
 --- !u!136 &13600000
