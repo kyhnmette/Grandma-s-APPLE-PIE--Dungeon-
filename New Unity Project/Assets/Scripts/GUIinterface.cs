@@ -14,9 +14,9 @@ public class GUIinterface : MonoBehaviour {
 		Lose.enabled = false;
 		
 		// Sets the position and size for each GUI Texture
-		AppleSeed.pixelInset = new Rect (-480, 190, 80, 80);
-		Win.pixelInset = new Rect (-Screen.width/4, -Screen.height/2, 750, 750);
-		Lose.pixelInset = new Rect (-Screen.width/4, -Screen.height/2, 750, 750);
+		AppleSeed.pixelInset = new Rect (-500, 240, 80, 80);
+		Win.pixelInset = new Rect (-600, -650, 1200, 1200);
+		Lose.pixelInset = new Rect (-600, -650, 1200, 1200);
 		
 		tree.SetBossHP(1); // Just to avoid a bug with the win screen
 	}
