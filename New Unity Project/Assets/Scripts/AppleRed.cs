@@ -15,7 +15,7 @@ public class AppleRed : Apple {
 		AppleScriptStart (); // the function AppleScripStart from the apple script is called
 		ATK = 25;
 		HP = 50;
-		Speed = Speed * 2.1f; // the original speed from the apple script is multiplied with 2.1
+		Speed = Speed * 1.9f; // the original speed from the apple script is multiplied with 2.1
 	}
 	
 	// Update is called once per frame
