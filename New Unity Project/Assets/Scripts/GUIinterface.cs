@@ -14,7 +14,7 @@ public class GUIinterface : MonoBehaviour {
 		Lose.enabled = false;
 		
 		// Sets the position and size for each GUI Texture
-		AppleSeed.pixelInset = new Rect (-Screen.width/2.5f, Screen.height/11, 170, 170);
+		AppleSeed.pixelInset = new Rect (-480, 190, 80, 80);
 		Win.pixelInset = new Rect (-Screen.width/4, -Screen.height/2, 750, 750);
 		Lose.pixelInset = new Rect (-Screen.width/4, -Screen.height/2, 750, 750);
 		
@@ -36,7 +36,7 @@ public class GUIinterface : MonoBehaviour {
 	void OnGUI () {
 		// This one will show the number of apple seeds the player have collected
 		if (GUIScript.GetGameOn() == true){
-			GUI.Label(new Rect(Screen.width/6.5f, Screen.height/4, 200, 100), "<size=40>" + Lars.GetPoints() + "</size>");
+			GUI.Label(new Rect(40, 80, 200, 100), "<size=40>" + Lars.GetPoints() + "</size>");
 		}
 		if (GUI.Button (new Rect (10, 10, 100, 50), "Quit")){
 			Application.Quit();
