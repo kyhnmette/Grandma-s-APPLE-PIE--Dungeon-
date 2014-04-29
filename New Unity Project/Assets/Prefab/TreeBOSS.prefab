@@ -77,6 +77,9 @@ Renderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortingLayerID: 0
 --- !u!33 &3300000
 MeshFilter:
   m_ObjectHideFlags: 1
@@ -113,6 +116,7 @@ BoxCollider:
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!95 &9500000
 Animator:
+  serializedVersion: 2
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -123,6 +127,7 @@ Animator:
   m_CullingMode: 1
   m_ApplyRootMotion: 1
   m_AnimatePhysics: 0
+  m_HasTransformHierarchy: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -134,8 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e922baa61240a477b98b2ff01d94739a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScriptOWNER: {fileID: 0}
-  treeRoot: {fileID: 100000, guid: 77a1b4abd8ab62447a4c56bf2f784498, type: 2}
+  treeRoot: {fileID: 100000, guid: a42897fe9f5a44bd8b689c8d35e4c0e5, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

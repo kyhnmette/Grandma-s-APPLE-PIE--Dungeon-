@@ -113,7 +113,7 @@ using System.Collections;
 		if(other.gameObject.name == "RedAPPLE(Clone)"){
 			HeroHP -= AppleRed.GetATK ();
 		}
-		if(other.gameObject.name == "TestRoot(Clone)"){
+		if(other.gameObject.name == "treeRoot(Clone)"){
 			HeroHP -= tree.GetATK ();
 		}
 		if(other.gameObject.name == "TreeBOSS(Clone)"){
